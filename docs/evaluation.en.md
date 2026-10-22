@@ -29,7 +29,7 @@ CourseAgent and direct AI generation each have a 3,600-second limit per task. Co
 | Agent score[^score] | 29.95 / 25.32 / 14.45 / 14.44 / 8.57 → 92.73 | 28 / 21.47 / 10 / 12.38 / 6.3 → 78.15 | 27.79 / 26.73 / 14 / 14 / 8.6 → 91.12 |
 | Manual operation | No additional intervention | Manual upload required | Manual upload required |
 
-See the [experiment records (Chinese)](../evaluations/README.md) for data sources and aggregation scope. Logical calls and HTTP requests use different counting units.
+See the [experiment records](../evaluations/) for data sources and aggregation scope. Logical calls and HTTP requests use different counting units.
 
 [^overlap]: Compare complete assignments for the same requirement in pairs. For each pair, divide the number of identical questions matched one-to-one by the smaller assignment's question count. Average pairs within each requirement, then average across requirements.
 

@@ -64,7 +64,7 @@ CourseAgent was evaluated on **20 requirements with three repetitions each, tota
 | Question completion rate | **97.26% (852/876)** |
 | Complete assignment rate | **91.67% (55/60)** |
 
-These rates measure generation completion. Question quality and platform save-and-readback outcomes are evaluated separately. See [evaluation](docs/evaluation.en.md) for the experimental setup, metric definitions and scoring rules, and [experiment records (Chinese)](evaluations/README.md) for aggregation details and source records.
+These rates measure generation completion. Question quality and platform save-and-readback outcomes are evaluated separately. See [evaluation](docs/evaluation.en.md) for the experimental setup, metric definitions and scoring rules, and [experiment records](evaluations/) for aggregation details and source records.
 
 ## Project navigation
 
@@ -74,7 +74,7 @@ These rates measure generation completion. Question quality and platform save-an
 | [tests/](tests/), [scripts/](scripts/) | Offline regressions, demos, evaluation and release utilities |
 | [docs/quickstart.en.md](docs/quickstart.en.md) | Installation, configuration, usage and troubleshooting |
 | [docs/architecture.en.md](docs/architecture.en.md) | Module responsibilities, recovery and execution boundaries |
-| [docs/evaluation.en.md](docs/evaluation.en.md), [evaluations/](evaluations/README.md) | Analysis, scoring rules and sanitized records |
+| [docs/evaluation.en.md](docs/evaluation.en.md), [evaluations/](evaluations/) | Analysis, scoring rules and sanitized records |
 | [examples/](examples/) | Original offline inputs |
 
 Directory conventions, test commands and GitHub publishing steps are maintained in [CONTRIBUTING.md](CONTRIBUTING.md).

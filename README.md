@@ -64,7 +64,7 @@ CourseAgent 在 **20 个需求各运行 3 次，共 60 次任务、876 题次**�
 | 题目完成率 | **97.26%（852/876）** |
 | 整套任务完成率 | **91.67%（55/60）** |
 
-以上完成率按生成结果统计；题目质量与平台保存回读分别评估。实验设置、指标定义与评分规则见[实验评估](docs/evaluation.md)，统计口径与原始记录见[实验记录](evaluations/README.md)。
+以上完成率按生成结果统计；题目质量与平台保存回读分别评估。实验设置、指标定义与评分规则见[实验评估](docs/evaluation.md)，统计口径与原始记录见[实验记录](evaluations/)。
 
 ## 项目导航
 
@@ -74,7 +74,7 @@ CourseAgent 在 **20 个需求各运行 3 次，共 60 次任务、876 题次**�
 | [tests/](tests/)、[scripts/](scripts/) | 离线回归、演示、评估和发布工具 |
 | [docs/quickstart.md](docs/quickstart.md) | 环境安装、配置、使用与故障排查 |
 | [docs/architecture.md](docs/architecture.md) | 模块职责、任务恢复与执行边界 |
-| [docs/evaluation.md](docs/evaluation.md)、[evaluations/](evaluations/README.md) | 实验分析、评分规则与脱敏数据 |
+| [docs/evaluation.md](docs/evaluation.md)、[evaluations/](evaluations/) | 实验分析、评分规则与脱敏数据 |
 | [examples/](examples/) | 原创离线输入 |
 
 目录约定、测试命令和 GitHub 发布步骤统一放在 [CONTRIBUTING.md](CONTRIBUTING.md)。
