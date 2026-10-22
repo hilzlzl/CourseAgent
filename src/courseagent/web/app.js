@@ -4,7 +4,7 @@ const fields=['type','stem','options','answer','blanks','reference_answer','rubr
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const snapshot=q=>Object.fromEntries(fields.map(f=>[f,q[f]??null]));
-const status=(s,error=false)=>{$('status').textContent=s;$('status').style.color=error?'#b42318':'#245de2'};
+const status=(s,error=false)=>{$('status').textContent=s;$('status').style.color=error?'#a84738':'#717d68';const note=$('workspace-feedback');if(note){note.textContent=s;note.classList.toggle('error',error)}};
 function changed(q){dirty=true;if(q){q.approved=false;delete q.approval_snapshot}status('有修改尚未保存。')}
 async function api(path,payload){const r=await fetch(path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});if(!r.ok)throw Error((await r.json()).error||'操作失败');return r}
 async function busy(button,fn){button.disabled=true;try{await fn()}catch(e){status(e.message,true)}finally{button.disabled=button.id==='start-import'&&importActive}}
@@ -80,7 +80,7 @@ function renderPlan(){
  renderTeachingPlan();renderWebReport();if(typeof renderProgrammingReport==='function')renderProgrammingReport();
 }
 
-function renderSources(){const checked=new Set([...document.querySelectorAll('[data-source]:checked')].map(e=>e.dataset.source));$('sources').innerHTML=sources.map(s=>`<div class="source-card"><label class="check"><input type="checkbox" data-source="${esc(s.id)}" ${checked.size===0||checked.has(s.id)?'checked':''}>${esc(s.name)}</label><span class="muted">${s.kind.toUpperCase()}${s.pages?' · '+s.pages+' 页':''} · ${esc(s.warning)}</span></div>`).join('')||'<p class="muted">请添加题目文档和课件。</p>'}
+function renderSources(){const checked=new Set([...document.querySelectorAll('[data-source]:checked')].map(e=>e.dataset.source));$('sources').innerHTML=sources.map(s=>`<div class="source-card"><label class="check"><input type="checkbox" data-source="${esc(s.id)}" ${checked.size===0||checked.has(s.id)?'checked':''}>${esc(s.name)}</label><span class="muted">${s.kind.toUpperCase()}${s.pages?' · '+s.pages+' 页':''} · ${esc(s.warning)}</span></div>`).join('')||'<p class="muted">请添加题目文档和课件。</p>';document.dispatchEvent(new Event('courseagent:sources-changed'));$('attach-material').disabled=false}
 async function save(){if(catalogDirty)throw Error('知识点表尚未应用，请先点击“应用知识点表并重新识别”。');const old=state.questions.filter(q=>q.approved).length;state=await (await api('/api/save',state)).json();dirty=false;render();await refreshReviewTasks();status(old>state.questions.filter(q=>q.approved).length?'已保存；内容不完整或审核后改动的题目已撤销确认。':'进度已保存。')}
 $('name').oninput=e=>{state.name=e.target.value;changed()};
 ['type-filter','selected-filter','pending-filter','tag-filter'].forEach(id=>$(id).onchange=render);$('question-query').oninput=render;
@@ -135,7 +135,7 @@ function codingProgressLabel(p){
  return `Excel 已上传 · 编程题已核对 ${p.completed||0}/${p.total||0} 道 · ${p.title||''}${steps[p.step]?' · '+steps[p.step]:''}`;
 }
 let importTimer=null,importActive=false;
-function openManualWorkbench(){ $('manual-workbench').open=true; }
+function openManualWorkbench(){ document.dispatchEvent(new CustomEvent('courseagent:open-workbench',{detail:{section:'question-review'}}));$('manual-workbench').open=true; }
 function showImportPanel(){ openManualWorkbench(); $('import-panel').scrollIntoView({behavior:'smooth',block:'start'}); }
 $('go-import').onclick=showImportPanel;
 async function refreshImports(){
@@ -274,28 +274,28 @@ async function runWebPlan(request){
  webRunning=true;const input=structuredClone(state);
  try{
   const job=await(await api('/api/web-plan',{document:input,request})).json();
-  localStorage.setItem('educoder-web-job',job.id);recoverWeb.hidden=false;
+  localStorage.setItem('courseagent:web-job:v1',job.id);recoverWeb.hidden=false;
   return await waitWebJob(job.id,JSON.stringify(input));
- }finally{webRunning=false;recoverWeb.hidden=!localStorage.getItem('educoder-web-job')}
+ }finally{webRunning=false;recoverWeb.hidden=!localStorage.getItem('courseagent:web-job:v1')}
 }
 async function waitWebJob(id,original){
  for(;;){
   const r=await fetch('/api/web-jobs/'+id);const job=await r.json();if(!r.ok)throw Error(job.error||'无法读取搜题任务');
   $('web-progress').textContent=job.phase;
-  if(job.status==='failed'){localStorage.removeItem('educoder-web-job');throw Error(job.error)}
+  if(job.status==='failed'){localStorage.removeItem('courseagent:web-job:v1');throw Error(job.error)}
   if(job.status==='completed'){
    if(JSON.stringify(state)!==original)throw Error('搜题期间你修改了当前作业，结果已保留；请保存修改后通过“找回网络搜题结果”加载，避免覆盖。');
    const current=await(await fetch('/api/review')).json();if(current.version!==job.review_version)throw Error('其他页面已保存新进度，搜题结果已保留在历史记录中，请刷新后找回。');
-   localStorage.removeItem('educoder-web-job');return job.result;
+   localStorage.removeItem('courseagent:web-job:v1');return job.result;
   }
   await new Promise(resolve=>setTimeout(resolve,2000));
  }
 }
-const recoverWeb=document.createElement('button');recoverWeb.className='secondary';recoverWeb.textContent='找回网络搜题结果';recoverWeb.hidden=!localStorage.getItem('educoder-web-job');$('web-progress').after(recoverWeb);
+const recoverWeb=document.createElement('button');recoverWeb.className='secondary';recoverWeb.textContent='找回网络搜题结果';recoverWeb.hidden=!localStorage.getItem('courseagent:web-job:v1');$('web-progress').after(recoverWeb);
 recoverWeb.onclick=()=>busy(recoverWeb,async()=>{
  if(webRunning)throw Error('当前网络搜题仍在进行，请等待结果');
  if(dirty)throw Error('请先保存或撤销当前修改，再找回搜题结果');
- const id=localStorage.getItem('educoder-web-job');if(!id)throw Error('没有待找回的搜题任务');
+ const id=localStorage.getItem('courseagent:web-job:v1');if(!id)throw Error('没有待找回的搜题任务');
  const result=await waitWebJob(id,JSON.stringify(state));
  if(result.version!==state.version)throw Error('当前审核进度已经变化，旧搜题结果保留在历史记录中，请通过历史方案找回');
  beforePlan=structuredClone(state);state=result;dirty=true;render();showReviewContent();recoverWeb.hidden=true;

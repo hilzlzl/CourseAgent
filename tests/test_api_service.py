@@ -13,6 +13,11 @@ class ApiTests(unittest.TestCase):
     def test_health_ui_and_compatible_routes_do_not_read_key_values(self):
         with TestClient(create_app()) as client:
             self.assertEqual(client.get('/').status_code,200)
+            for path, content_type in (('/styles.css', 'text/css'), ('/workspace.js', 'text/javascript')):
+                asset=client.get(path)
+                self.assertEqual(asset.status_code,200)
+                self.assertIn(content_type,asset.headers['content-type'])
+                self.assertEqual(asset.headers['cache-control'],'no-store')
             health=client.get('/api/health').json()
             self.assertEqual(health['task_backend'],'sqlite');self.assertFalse(health['published'])
             with patch('courseagent.model_client.model_status',return_value={'configured':True,'model':'test'}):

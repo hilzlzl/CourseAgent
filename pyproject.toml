@@ -27,6 +27,7 @@ namespaces = false
 [tool.setuptools.package-data]
 courseagent = [
     "web/*.html",
+    "web/*.css",
     "web/*.js",
     "browser/*.cjs",
     "_vendor/open_deep_research/LICENSE",

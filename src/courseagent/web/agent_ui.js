@@ -1,6 +1,6 @@
 /* Autonomous tasks do not overwrite the optional teacher workbench. */
 (()=>{
- let timer=null,eventStream=null,historyOpen=false,refreshSequence=0;const openedHistory=new Set();
+ let timer=null,eventStream=null,currentTaskId=null,refreshSequence=0;
  async function getTask(path){
   const r=await fetch(path,{method:'GET',cache:'no-store',signal:AbortSignal.timeout(15000)});
   if(!r.ok)throw Error('任务进度读取失败（'+r.status+'），请刷新进度');
@@ -82,12 +82,15 @@
   const sequence=++refreshSequence;
   const data=await getTask('/api/agent-tasks');
   if(sequence!==refreshSequence)return;
-  const current=data.tasks.find(t=>['queued','running','importing'].includes(t.status))||data.tasks.filter(t=>t.purpose!=='development_test').sort((a,b)=>(b.run_started_at||b.created_at||'').localeCompare(a.run_started_at||a.created_at||''))[0];
-  const history=data.tasks.filter(t=>t.id!==current?.id);
+  const tasks=data.tasks.filter(t=>t.purpose!=='development_test');
+  const current=tasks.find(t=>t.id===currentTaskId)||tasks.find(t=>['queued','running','importing'].includes(t.status));
+  const history=tasks.filter(t=>t.id!==current?.id);
+  const openedHistory=new Set([...document.querySelectorAll('[data-agent-history][open]')].map(e=>e.dataset.agentHistory));
   const decisions=new Set([...document.querySelectorAll('[data-agent-decisions][open]')].map(e=>e.dataset.agentDecisions));
-  $('agent-tasks').innerHTML=(current?`<div class="agent-current"><h3>当前任务</h3>${taskCard(current)}</div>`:'<p class="muted">填写要求后交给 Agent，题目进度会显示在这里。</p>')+(history.length?`<details id="agent-history" ${historyOpen?'open':''}><summary>过往记录（${history.length}，按需查看）</summary><p class="muted">用于找回题目、查看交付链接和排查中断；不会代替当前任务，也不会仅凭历史记录跳过平台检查。</p>${history.map(t=>`<details data-agent-history="${esc(t.id)}" ${openedHistory.has(t.id)?'open':''}><summary>${esc(t.request)} · ${esc(labels[t.status]||t.status)}</summary>${taskCard(t)}</details>`).join('')}</details>`:'');
-  if($('agent-history'))$('agent-history').ontoggle=()=>{historyOpen=$('agent-history').open;};
-  document.querySelectorAll('[data-agent-history]').forEach(e=>e.ontoggle=()=>{e.open?openedHistory.add(e.dataset.agentHistory):openedHistory.delete(e.dataset.agentHistory);});
+  $('agent-tasks').innerHTML=current?`<div class="agent-current"><h3>当前任务</h3>${taskCard(current)}</div>`:'';
+  $('task-controls').hidden=!current;
+  $('history-count').textContent=history.length||'';
+  $('task-history-list').innerHTML=history.length?history.map(t=>`<details class="history-entry" data-agent-history="${esc(t.id)}" ${openedHistory.has(t.id)?'open':''}><summary><span class="history-title">${esc(t.request)}</span><span class="history-label">${esc(labels[t.status]||t.status)}</span></summary>${taskCard(t)}</details>`).join(''):'<div class="history-empty">暂无历史任务。先从一份新作业开始吧。</div>';
   document.querySelectorAll('[data-agent-decisions]').forEach(e=>{if(decisions.has(e.dataset.agentDecisions))e.open=true;});
   const active=data.tasks.some(t=>['queued','running','importing'].includes(t.status));$('agent-start').disabled=active;
   const stopButton=$('agent-stop-current'),controlNote=$('agent-control-note');
@@ -109,6 +112,7 @@
   document.querySelectorAll('[data-agent-resume]').forEach(b=>b.onclick=()=>busy(b,async()=>{
    const r=await fetch('/api/agent-tasks/'+b.dataset.agentResume+'/resume',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}',signal:AbortSignal.timeout(15000)});
    const data=await r.json();if(!r.ok)throw Error(data.error||'继续任务失败');
+   currentTaskId=b.dataset.agentResume;
    status('已继续原任务，保留完成的题目和检查结果。');await refresh();
   }));
   document.querySelectorAll('[data-agent-result]').forEach(b=>b.onclick=async()=>{
@@ -117,14 +121,19 @@
   });
  }
  $('agent-start').onclick=async()=>{
+  if(!$('agent-prompt').value.trim()){
+   showAgentError(new Error('请先描述这次作业的课程、范围和题型要求。'));$('agent-prompt').focus();return;
+  }
   $('agent-start').disabled=true;$('agent-tasks').insertAdjacentHTML('afterbegin','<p class="hint" id="agent-submitting">正在提交当前要求，马上显示任务进度…</p>');try{
-  await submitTask({prompt:$('agent-prompt').value,name:$('agent-name').value.trim()||('Agent作业-'+new Date().toISOString().replace(/[:.]/g,'-').slice(0,19)),classroom_url:$('agent-classroom').value.trim(),course:$('agent-course').value.trim(),execute:!$('agent-local').checked});
+  const created=await submitTask({prompt:$('agent-prompt').value,name:$('agent-name').value.trim()||('Agent作业-'+new Date().toISOString().replace(/[:.]/g,'-').slice(0,19)),classroom_url:$('agent-classroom').value.trim(),course:$('agent-course').value.trim(),execute:!$('agent-local').checked});
+  currentTaskId=created.id;
   status('Agent 已接手任务，可在上方查看自动决策与交付结果。');
   }catch(e){showAgentError(e)}finally{const pending=$('agent-submitting');if(pending)pending.remove();await refresh().catch(showAgentError);}
  };
  document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh().catch(showAgentError);});
  window.addEventListener('focus',()=>refresh().catch(showAgentError));
  $('agent-refresh').onclick=()=>busy($('agent-refresh'),refresh);
+ document.addEventListener('courseagent:new-assignment',()=>{currentTaskId=null;refresh().catch(showAgentError);});
  if(window.EventSource){
   eventStream=new EventSource('/api/agent-events');
   let scheduled=null;

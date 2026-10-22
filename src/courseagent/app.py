@@ -106,6 +106,10 @@ class Handler(BaseHTTPRequestHandler):
         path = urlparse(self.path).path
         if path == '/':
             self.reply((WEB/'index.html').read_bytes(), 'text/html; charset=utf-8')
+        elif path == '/styles.css':
+            self.reply((WEB/'styles.css').read_bytes(), 'text/css; charset=utf-8')
+        elif path == '/workspace.js':
+            self.reply((WEB/'workspace.js').read_bytes(), 'text/javascript; charset=utf-8')
         elif path == '/app.js':
             self.reply((WEB/'app.js').read_bytes(), 'text/javascript; charset=utf-8')
         elif path == '/programming_review.js':
