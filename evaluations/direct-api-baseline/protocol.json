@@ -1,0 +1,49 @@
+{
+  "frozen_at": "2026-10-20T14:04:15.564228+00:00",
+  "arm": "direct_model_API_without_CourseAgent_workflow",
+  "requested_model": "gpt-6.1-sol",
+  "model_parameters": {
+    "reasoning_effort": "low",
+    "max_output_tokens": 16384,
+    "token_parameter": "max_completion_tokens",
+    "trust_env": false
+  },
+  "system_prompt": "你是一个通用助手。当前调用没有联网检索、代码执行或写文件工具。请如实说明未执行的步骤，并直接返回你能提供的最终结果。",
+  "requests_per_case": 1,
+  "automatic_retries": 0,
+  "tools": [],
+  "courseagent_modules_imported": false,
+  "prior_question_or_answer_outputs_provided": false,
+  "course_material_delivery": "Full text extracted generically from the identical original PDF; no image interpretation.",
+  "attachment_sha256": "ed39b3db08ca65291ab3b89c58a11221cc3b35471f398a6267518f256ee6579d",
+  "attachment_text_sha256": "f3a2cc2ec369c50be6e1a31923394453de28828f22dedc05803a2cd8c062f8a0",
+  "attachment_text_characters": 63358,
+  "script_sha256": "afa2b3395628cf2c90b28f70879299eda471458c5f7e694e3a659d104ef4686f",
+  "per_task_deadline_seconds": 3600,
+  "stream_idle_timeout_seconds": 120,
+  "failure_policy": "Retain first response or transport failure; no continuation, regeneration or feedback.",
+  "concurrency": 3,
+  "platform_writes": 0,
+  "interpretation": "Direct API capability baseline, not a matched-tool general agent or workflow ablation. Three single observations only; rubric alignment is retrospective.",
+  "cases": [
+    {
+      "id": "stack-A",
+      "run_id": "stack-A-D1",
+      "request_sha256": "580d74093c41b031f2b4804bf5b0d337a0de82e9f65228546eb5d0f6f467054b",
+      "original_prompt_sha256": "0705468bbc3746aff83284b4e5383488764cda964658ed399308360deb133366"
+    },
+    {
+      "id": "sort-B",
+      "run_id": "sort-B-D1",
+      "request_sha256": "8e842fc130359758585ebbbef86fea234798b1dc246f48f2378dde5f7dd1af2f",
+      "original_prompt_sha256": "9a7cdc2afcda036bc5bc91f85be05e70d065018435ec217146eb2a86bd544cc8"
+    },
+    {
+      "id": "tree-C",
+      "run_id": "tree-C-D1",
+      "request_sha256": "1b5c00323afdbc05750d9229970d94eecec543a0faec874e05c3c723bd544a29",
+      "original_prompt_sha256": "fcf6fff408d12fd0eb652575afb18cd95cb4127994cebc3656b6a4ef6c7d345f"
+    }
+  ],
+  "request_source": "Same original teacher prompts as the project API pilot; private slides excluded from the public archive."
+}

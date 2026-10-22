@@ -1,0 +1,55 @@
+{
+  "review_status": "retrospective_assistant_review_not_independent_acceptance",
+  "reviewed_questions": 44,
+  "runs": [
+    {
+      "run_id": "stack-A-P1",
+      "assistant_reference_breakdown": {
+        "scope": 30.0,
+        "correctness": 22.5,
+        "completeness": 15.0,
+        "suitability": 14.0625,
+        "whole_assignment_coverage": 10.0
+      },
+      "assistant_reference_total": 91.5625,
+      "independent_quality_total": null,
+      "independent_teacher_score": null,
+      "delivery_requirements_met": false
+    },
+    {
+      "run_id": "sort-B-P1",
+      "assistant_reference_breakdown": {
+        "scope": 30.0,
+        "correctness": 21.964285714285715,
+        "completeness": 14.107142857142858,
+        "suitability": 14.732142857142858,
+        "whole_assignment_coverage": 5.0
+      },
+      "assistant_reference_total": 85.80357142857143,
+      "independent_quality_total": null,
+      "independent_teacher_score": null,
+      "delivery_requirements_met": false
+    },
+    {
+      "run_id": "tree-C-P1",
+      "assistant_reference_breakdown": {
+        "scope": 30.0,
+        "correctness": 22.5,
+        "completeness": 13.625,
+        "suitability": 15.0,
+        "whole_assignment_coverage": 10.0
+      },
+      "assistant_reference_total": 91.125,
+      "independent_quality_total": null,
+      "independent_teacher_score": null,
+      "delivery_requirements_met": false
+    }
+  ],
+  "assistant_reference_macro_mean": 89.49702380952381,
+  "independent_quality_total": null,
+  "independent_teacher_score": null,
+  "independent_general_agent_runs": 0,
+  "new_model_requests": 0,
+  "platform_writes": 0,
+  "warning": "Recorded assistant content labels only; missing independent quality remains null. The reference score cannot override delivery failures or establish a causal comparison."
+}

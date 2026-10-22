@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "courseagent"
+version = "0.12.0"
+description = "Recoverable local agent for course assignments and sandboxed programming tests"
+readme = "README.en.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+dynamic = ["dependencies", "optional-dependencies"]
+
+[project.scripts]
+courseagent = "courseagent.run_service:main"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+optional-dependencies.retrieval = {file = ["requirements-retrieval.txt"]}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["courseagent*"]
+namespaces = false
+
+[tool.setuptools.package-data]
+courseagent = [
+    "web/*.html",
+    "web/*.js",
+    "browser/*.cjs",
+    "_vendor/open_deep_research/LICENSE",
+    "_vendor/open_deep_research/README.md",
+    "_vendor/open_deep_research/provenance.json",
+    "_vendor/open_deep_research/upstream/*.py",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

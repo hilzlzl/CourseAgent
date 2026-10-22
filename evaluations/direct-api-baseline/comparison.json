@@ -1,0 +1,38 @@
+{
+  "study_design": "three_request_exploratory_paired_system_comparison",
+  "requested_model": "gpt-6.1-sol",
+  "direct_api_runs": 3,
+  "project_runs": 3,
+  "direct_api_reported_tokens": 52382,
+  "direct_api_observed_http_requests": 3,
+  "project_logical_model_calls": 197,
+  "direct_api_response_seconds_median": 216.2786988500011,
+  "project_export_seconds_median": 964.0877451896667,
+  "time_endpoints_comparable": false,
+  "direct_api_questions": 44,
+  "project_questions": 44,
+  "direct_api_posthoc_cases": 200,
+  "project_exported_cases": 309,
+  "direct_api_posthoc_reference_consistency_passed": 200,
+  "direct_api_independently_verified_output_cases": 0,
+  "project_independently_verified_output_cases": 70,
+  "direct_api_assistant_content_macro_mean": 89.375,
+  "project_assistant_content_macro_mean": 89.49702380952381,
+  "supports_overall_project_superiority": false,
+  "supports_isolated_workflow_causal_effect": false,
+  "independent_teacher_scores": null,
+  "teacher_active_time": null,
+  "domain_audit": {
+    "passed": 200,
+    "failed": 0,
+    "scope": "input_domain_only_not_independent_output_correctness"
+  },
+  "posthoc_artifact_audit_has_no_model_feedback": true,
+  "limits": [
+    "One observation per condition and request; no statistical superiority claim.",
+    "Same requested model; different tool access, repeated-call budgets, run time, attachment encoding and caches.",
+    "Project runs precede the direct baseline; no randomized run order.",
+    "Both grading and comparison are retrospective assistant review; no independent teacher acceptance.",
+    "Historical 36-run evaluation is separate and is not the control arm."
+  ]
+}

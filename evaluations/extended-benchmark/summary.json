@@ -1,0 +1,378 @@
+{
+  "initial": {
+    "historical": {
+      "planned_runs": 36,
+      "finished_runs": 36,
+      "pending_runs": 0,
+      "is_final": true,
+      "complete_assignments": 35,
+      "unassisted_within_deadline": 34,
+      "completion_rate_final": 0.9722222222222222,
+      "observed_completion_rate": 0.9722222222222222,
+      "unassisted_rate_final": 0.9444444444444444,
+      "planned_ordinary_questions": 288,
+      "planned_programming_questions": 240,
+      "planned_questions": 528,
+      "ordinary_questions": 288,
+      "programming_questions": 234,
+      "question_completion_rate_final": 0.9886363636363636,
+      "missing_questions_in_finished_runs": {
+        "ordinary": 0,
+        "programming": 6
+      },
+      "latency_sample_n": 34,
+      "latency_p50_seconds": 505.4150607585907,
+      "latency_p90_seconds": 842.9550290107727,
+      "logical_model_calls": 1862,
+      "reported_tokens": 4948653,
+      "spans_missing_usage": 5,
+      "spans_with_reported_usage": 1857,
+      "public_cases": 541,
+      "hidden_cases": 3163,
+      "unspecified_cases": 0,
+      "finite_oracle_comparisons": {
+        "passed": 1389,
+        "unassessed": 2315,
+        "flagged": 0
+      },
+      "repeat": {
+        "ordinary": {
+          "macro_request_repeat_rate": 0.5869047619047619,
+          "comparable_pairs": 22,
+          "requests_with_pairs": 8
+        },
+        "programming": {
+          "macro_request_repeat_rate": 0.5347222222222222,
+          "comparable_pairs": 34,
+          "requests_with_pairs": 12
+        }
+      },
+      "independent_teacher_score": null,
+      "actual_http_requests": null,
+      "actual_api_cost": null
+    },
+    "extension": {
+      "planned_runs": 24,
+      "finished_runs": 24,
+      "pending_runs": 0,
+      "is_final": true,
+      "complete_assignments": 17,
+      "unassisted_within_deadline": 17,
+      "completion_rate_final": 0.7083333333333334,
+      "observed_completion_rate": 0.7083333333333334,
+      "unassisted_rate_final": 0.7083333333333334,
+      "planned_ordinary_questions": 186,
+      "planned_programming_questions": 162,
+      "planned_questions": 348,
+      "ordinary_questions": 160,
+      "programming_questions": 153,
+      "question_completion_rate_final": 0.8994252873563219,
+      "missing_questions_in_finished_runs": {
+        "ordinary": 26,
+        "programming": 9
+      },
+      "latency_sample_n": 17,
+      "latency_p50_seconds": 1084.5212094783783,
+      "latency_p90_seconds": 1606.739064693451,
+      "logical_model_calls": 2243,
+      "reported_tokens": 5282083,
+      "spans_missing_usage": 28,
+      "spans_with_reported_usage": 2215,
+      "public_cases": 372,
+      "hidden_cases": 2131,
+      "unspecified_cases": 0,
+      "finite_oracle_comparisons": {
+        "passed": 33,
+        "unassessed": 2470,
+        "flagged": 0
+      },
+      "repeat": {
+        "ordinary": {
+          "macro_request_repeat_rate": 0.611111111111111,
+          "comparable_pairs": 7,
+          "requests_with_pairs": 3
+        },
+        "programming": {
+          "macro_request_repeat_rate": 0.5777777777777777,
+          "comparable_pairs": 13,
+          "requests_with_pairs": 5
+        }
+      },
+      "independent_teacher_score": null,
+      "actual_http_requests": null,
+      "actual_api_cost": null
+    },
+    "combined": {
+      "planned_runs": 60,
+      "finished_runs": 60,
+      "pending_runs": 0,
+      "is_final": true,
+      "complete_assignments": 52,
+      "unassisted_within_deadline": 51,
+      "completion_rate_final": 0.8666666666666667,
+      "observed_completion_rate": 0.8666666666666667,
+      "unassisted_rate_final": 0.85,
+      "planned_ordinary_questions": 474,
+      "planned_programming_questions": 402,
+      "planned_questions": 876,
+      "ordinary_questions": 448,
+      "programming_questions": 387,
+      "question_completion_rate_final": 0.9531963470319634,
+      "missing_questions_in_finished_runs": {
+        "ordinary": 26,
+        "programming": 15
+      },
+      "latency_sample_n": 51,
+      "latency_p50_seconds": 627.5374281406403,
+      "latency_p90_seconds": 1319.7055513858795,
+      "logical_model_calls": 4105,
+      "reported_tokens": 10230736,
+      "spans_missing_usage": 33,
+      "spans_with_reported_usage": 4072,
+      "public_cases": 913,
+      "hidden_cases": 5294,
+      "unspecified_cases": 0,
+      "finite_oracle_comparisons": {
+        "passed": 1422,
+        "unassessed": 4785,
+        "flagged": 0
+      },
+      "repeat": {
+        "ordinary": {
+          "macro_request_repeat_rate": 0.5935064935064935,
+          "comparable_pairs": 29,
+          "requests_with_pairs": 11
+        },
+        "programming": {
+          "macro_request_repeat_rate": 0.5473856209150326,
+          "comparable_pairs": 47,
+          "requests_with_pairs": 17
+        }
+      },
+      "independent_teacher_score": null,
+      "actual_http_requests": null,
+      "actual_api_cost": null
+    }
+  },
+  "replaced": {
+    "historical": {
+      "planned_runs": 36,
+      "finished_runs": 36,
+      "pending_runs": 0,
+      "is_final": true,
+      "complete_assignments": 35,
+      "unassisted_within_deadline": 34,
+      "completion_rate_final": 0.9722222222222222,
+      "observed_completion_rate": 0.9722222222222222,
+      "unassisted_rate_final": 0.9444444444444444,
+      "planned_ordinary_questions": 288,
+      "planned_programming_questions": 240,
+      "planned_questions": 528,
+      "ordinary_questions": 288,
+      "programming_questions": 234,
+      "question_completion_rate_final": 0.9886363636363636,
+      "missing_questions_in_finished_runs": {
+        "ordinary": 0,
+        "programming": 6
+      },
+      "latency_sample_n": 34,
+      "latency_p50_seconds": 505.4150607585907,
+      "latency_p90_seconds": 842.9550290107727,
+      "logical_model_calls": 1862,
+      "reported_tokens": 4948653,
+      "spans_missing_usage": 5,
+      "spans_with_reported_usage": 1857,
+      "public_cases": 541,
+      "hidden_cases": 3163,
+      "unspecified_cases": 0,
+      "finite_oracle_comparisons": {
+        "passed": 1389,
+        "unassessed": 2315,
+        "flagged": 0
+      },
+      "repeat": {
+        "ordinary": {
+          "macro_request_repeat_rate": 0.5869047619047619,
+          "comparable_pairs": 22,
+          "requests_with_pairs": 8
+        },
+        "programming": {
+          "macro_request_repeat_rate": 0.5347222222222222,
+          "comparable_pairs": 34,
+          "requests_with_pairs": 12
+        }
+      },
+      "independent_teacher_score": null,
+      "actual_http_requests": null,
+      "actual_api_cost": null
+    },
+    "extension": {
+      "planned_runs": 24,
+      "finished_runs": 24,
+      "pending_runs": 0,
+      "is_final": true,
+      "complete_assignments": 20,
+      "unassisted_within_deadline": 20,
+      "completion_rate_final": 0.8333333333333334,
+      "observed_completion_rate": 0.8333333333333334,
+      "unassisted_rate_final": 0.8333333333333334,
+      "planned_ordinary_questions": 186,
+      "planned_programming_questions": 162,
+      "planned_questions": 348,
+      "ordinary_questions": 182,
+      "programming_questions": 148,
+      "question_completion_rate_final": 0.9482758620689655,
+      "missing_questions_in_finished_runs": {
+        "ordinary": 4,
+        "programming": 14
+      },
+      "latency_sample_n": 20,
+      "latency_p50_seconds": 875.818736076355,
+      "latency_p90_seconds": 1511.0966582298279,
+      "logical_model_calls": 2157,
+      "reported_tokens": 4935491,
+      "spans_missing_usage": 32,
+      "spans_with_reported_usage": 2125,
+      "public_cases": 355,
+      "hidden_cases": 2062,
+      "unspecified_cases": 0,
+      "finite_oracle_comparisons": {
+        "passed": 16,
+        "unassessed": 2401,
+        "flagged": 0
+      },
+      "repeat": {
+        "ordinary": {
+          "macro_request_repeat_rate": 0.4933333333333333,
+          "comparable_pairs": 11,
+          "requests_with_pairs": 5
+        },
+        "programming": {
+          "macro_request_repeat_rate": 0.5158730158730158,
+          "comparable_pairs": 17,
+          "requests_with_pairs": 7
+        }
+      },
+      "independent_teacher_score": null,
+      "actual_http_requests": null,
+      "actual_api_cost": null
+    },
+    "combined": {
+      "planned_runs": 60,
+      "finished_runs": 60,
+      "pending_runs": 0,
+      "is_final": true,
+      "complete_assignments": 55,
+      "unassisted_within_deadline": 54,
+      "completion_rate_final": 0.9166666666666666,
+      "observed_completion_rate": 0.9166666666666666,
+      "unassisted_rate_final": 0.9,
+      "planned_ordinary_questions": 474,
+      "planned_programming_questions": 402,
+      "planned_questions": 876,
+      "ordinary_questions": 470,
+      "programming_questions": 382,
+      "question_completion_rate_final": 0.9726027397260274,
+      "missing_questions_in_finished_runs": {
+        "ordinary": 4,
+        "programming": 20
+      },
+      "latency_sample_n": 54,
+      "latency_p50_seconds": 607.3262957334518,
+      "latency_p90_seconds": 1319.7055513858795,
+      "logical_model_calls": 4019,
+      "reported_tokens": 9884144,
+      "spans_missing_usage": 37,
+      "spans_with_reported_usage": 3982,
+      "public_cases": 896,
+      "hidden_cases": 5225,
+      "unspecified_cases": 0,
+      "finite_oracle_comparisons": {
+        "passed": 1405,
+        "unassessed": 4716,
+        "flagged": 0
+      },
+      "repeat": {
+        "ordinary": {
+          "macro_request_repeat_rate": 0.550915750915751,
+          "comparable_pairs": 33,
+          "requests_with_pairs": 13
+        },
+        "programming": {
+          "macro_request_repeat_rate": 0.5277777777777778,
+          "comparable_pairs": 51,
+          "requests_with_pairs": 19
+        }
+      },
+      "independent_teacher_score": null,
+      "actual_http_requests": null,
+      "actual_api_cost": null
+    }
+  },
+  "retry": {
+    "planned_runs": 7,
+    "finished_runs": 7,
+    "pending_runs": 0,
+    "is_final": true,
+    "complete_assignments": 3,
+    "unassisted_within_deadline": 3,
+    "completion_rate_final": 0.42857142857142855,
+    "observed_completion_rate": 0.42857142857142855,
+    "unassisted_rate_final": 0.42857142857142855,
+    "planned_ordinary_questions": 62,
+    "planned_programming_questions": 46,
+    "planned_questions": 108,
+    "ordinary_questions": 58,
+    "programming_questions": 32,
+    "question_completion_rate_final": 0.8333333333333334,
+    "missing_questions_in_finished_runs": {
+      "ordinary": 4,
+      "programming": 14
+    },
+    "latency_sample_n": 3,
+    "latency_p50_seconds": 475.41551518440247,
+    "latency_p90_seconds": 792.0125172138214,
+    "logical_model_calls": 644,
+    "reported_tokens": 1381288,
+    "spans_missing_usage": 12,
+    "spans_with_reported_usage": 632,
+    "public_cases": 84,
+    "hidden_cases": 447,
+    "unspecified_cases": 0,
+    "finite_oracle_comparisons": {
+      "passed": 0,
+      "unassessed": 531,
+      "flagged": 0
+    },
+    "repeat": {
+      "ordinary": {
+        "macro_request_repeat_rate": 1.0,
+        "comparable_pairs": 1,
+        "requests_with_pairs": 1
+      },
+      "programming": {
+        "macro_request_repeat_rate": 0.8333333333333334,
+        "comparable_pairs": 1,
+        "requests_with_pairs": 1
+      }
+    },
+    "independent_teacher_score": null,
+    "actual_http_requests": null,
+    "actual_api_cost": null
+  },
+  "replacements": {
+    "string-B-R1": "string-B-R1-retry1",
+    "string-C-R1": "string-C-R1-retry1",
+    "graph-B-R1": "graph-B-R1-retry1",
+    "graph-A-R2": "graph-A-R2-retry1",
+    "string-B-R3": "string-B-R3-retry1",
+    "graph-A-R3": "graph-A-R3-retry1",
+    "string-C-R3": "string-C-R3-retry1"
+  },
+  "total_incurred_including_superseded_attempts": {
+    "attempts": 67,
+    "logical_model_calls": 4749,
+    "reported_tokens": 11612024,
+    "spans_missing_usage": 45
+  }
+}

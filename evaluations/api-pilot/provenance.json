@@ -1,0 +1,35 @@
+{
+  "format": "courseagent-sanitized-real-api-pilot-v1",
+  "original_evidence_sha256": {
+    "project_pilot_plan": "7a9837295c55f0c3ce6bfabc5294e70bc17dafe615270e59846dc7a08eaea1d7",
+    "project_pilot_verification": "266d22befb71256004caf5659ca301342f95404b2bbea30ed47430e2ebf9c065",
+    "stack-A_record": "c81de106ef79b80cf630eac7814657434985973fdd918bccc50263bbbbb77bf8",
+    "stack-A_delivery-fields-audit": "6607770d944f1d1a10d44ec3fbfbc353501fc29330752578b0a1686db21ab48d",
+    "stack-A_delivery-requirements-audit": "46d4cd046e33b7b28050b6cf5617af7dc0af2aaea1e0418d8964d6ffe43e41ce",
+    "stack-A_independent-case-audit": "def582ae7c5dfc274ee88208b4cb62656b6e03131a065ef153fb68c3979690cf",
+    "stack-A_export-integrity-audit": "76b4da8271330d193b2b8c06b89cf20aa8814f6d8e6a783ab03303ff1e427a9f",
+    "sort-B_record": "99253ecd99eb77d40cfad58a5fa1c421bb221b3d8150c2f2fd129259683097e3",
+    "sort-B_delivery-fields-audit": "ff87b25e8834552e2bf5d096119dae9ccc168022c81617e7fcd85de16c184261",
+    "sort-B_delivery-requirements-audit": "17144c78cdb5101cd5a19e85a4fcbc997c1743d3e251d3fbcd2c634b06d895d2",
+    "sort-B_independent-case-audit": "2290b160ca368a12262a7d8793be8282fbfab947620301601548a18ed48d0356",
+    "sort-B_export-integrity-audit": "f3913fb44bf684dd05ab74f4ca1ef11479047b7db9b0ea7768f391732f5da5f1",
+    "tree-C_record": "511bf3d84f61ab4fddde9ddd0996480e296f3fe35492b83751b181d3c00bae74",
+    "tree-C_delivery-fields-audit": "c93504ba040c2d65d5e4f44bce66e00859944dfee00dc868a878daefefcb2eea",
+    "tree-C_delivery-requirements-audit": "e716e5557658e78df0ba38d1be0d2726598122c90d3a352443e0185d658349a1",
+    "tree-C_independent-case-audit": "a86486b218a578638fb8da4b72bf60bbcc6e764b0db49693addfec7bd00f1983",
+    "tree-C_export-integrity-audit": "717e281b15db4886b46ba6e337285f0dea719ab6a9397e80d08ca157950cb1b7",
+    "stack-A_model-trace": "ba79eac6cbe7d3c6178d1130155d11c01dc0652e9e1d9ad69857f2e82ea3dd47",
+    "sort-B_model-trace": "68a977563507523406400fb4431310cae80d3697a2b550cb0e88d5deff2cfd3b",
+    "tree-C_model-trace": "b274151ae3f887ac55e473c83d906510dafda171f90005029c1600286d1c4cfc"
+  },
+  "raw_content_distributed": false,
+  "excluded": [
+    "Private course materials",
+    "Third-party question statements and reference programs",
+    "Hidden inputs and outputs",
+    "Task identities, traces and classroom identifiers",
+    "Local configuration, credentials and absolute personal paths"
+  ],
+  "evidence_scope": "Project task records, delivery audits and task-linked model traces. Sanitized metadata supports arithmetic; hashes do not certify authenticity or permit independent content regrading.",
+  "reproduction_limits": "Slide-guided run uses private material not distributed. Current public tree was reorganized after these tasks; identical reruns are not claimed."
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-20",
+  "study_design": "single_arm_real_api_pilot",
+  "study": "Three assistant-executed CourseAgent tasks through the configured model API.",
+  "case_ids": [
+    "stack-A",
+    "sort-B",
+    "tree-C"
+  ],
+  "repetitions_per_case": 1,
+  "independent_general_agent_runs": 0,
+  "requested_model": "gpt-6.1-sol",
+  "model_evidence": "Requested model identifier appears in task-linked model traces; no independent provider-version certification.",
+  "requirements": {
+    "programming_public_cases_minimum": 2,
+    "programming_hidden_cases_minimum": 8,
+    "source_urls_or_adaptation_labels": true,
+    "explicit_answers_and_explanations": true,
+    "runnable_python3_stdio_reference_programs": true,
+    "paired_utf8_input_output_files": true,
+    "platform_operations": false
+  },
+  "timing": "Before enqueue through last required local export; includes queue wait.",
+  "deadline_seconds": 3600,
+  "cache_control": "Existing production web caches retained; new isolated project history group; not cold-cache testing.",
+  "failure_policy": "Keep first project delivery; no manual resume or mid-cohort production-code changes.",
+  "teacher_operation_time_measured": false,
+  "independent_teacher_review_obtained": false,
+  "platform_delivery_measured": false,
+  "controlled_workflow_ablation": false,
+  "http_request_count_measured": false,
+  "actual_cost_measured": false,
+  "logical_call_definition": "Task-linked workflow model spans; transport retries may differ from actual HTTP requests."
+}

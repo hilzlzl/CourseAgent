@@ -1,0 +1,3 @@
+# Optional local semantic retrieval. BM25 still works when these/model assets are unavailable.
+fastembed>=0.7,<0.9
+faiss-cpu>=1.10,<2

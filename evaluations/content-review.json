@@ -1,0 +1,471 @@
+{
+  "schema_version": 1,
+  "scope": "assistant_assisted_content_review_not_independent_teacher_review",
+  "review_date": "2026-10-20",
+  "reviewed_question_instances": 522,
+  "unique_ordinary_variants": 119,
+  "unique_programming_variants": 78,
+  "complete_assignments_scored": 35,
+  "incomplete_assignments_unscored": 1,
+  "rubric": {
+    "question_dimensions": {
+      "scope": 30,
+      "correctness_evidence": 30,
+      "statement_completeness": 15,
+      "teaching_suitability": 15
+    },
+    "whole_assignment_coverage": 10,
+    "labels": {
+      "0": "Substantive deficiency",
+      "1": "Needs revision or stronger evidence",
+      "2": "No revision identified in this review / supporting evidence available"
+    },
+    "mixed_assignment_weighting": "Average ordinary and programming components equally for the first four dimensions; programming-only assignments use programming scores.",
+    "coverage_weighting": "Score the whole assignment separately; no requirement to cover every slide or allocate equal counts to every concept."
+  },
+  "mean_score": 90.72627714285714,
+  "mean_breakdown": {
+    "scope": 29.946428571428573,
+    "correctness": 23.323979591836736,
+    "completeness": 14.445408163265306,
+    "suitability": 14.439030612244897,
+    "whole_assignment_coverage": 8.571428571428571
+  },
+  "runs": [
+    {
+      "run": "stack-A-R1",
+      "local_generation_completed": true,
+      "score": 91.5625,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 22.5,
+        "completeness": 15.0,
+        "suitability": 14.0625,
+        "whole_assignment_coverage": 10.0
+      }
+    },
+    {
+      "run": "sort-B-R1",
+      "local_generation_completed": true,
+      "score": 93.9286,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 24.464285714285715,
+        "completeness": 14.732142857142858,
+        "suitability": 14.732142857142858,
+        "whole_assignment_coverage": 10.0
+      }
+    },
+    {
+      "run": "tree-C-R1",
+      "local_generation_completed": true,
+      "score": 94.375,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 24.999999999999996,
+        "completeness": 14.374999999999998,
+        "suitability": 15.0,
+        "whole_assignment_coverage": 10.0
+      }
+    },
+    {
+      "run": "stack-B-R1",
+      "local_generation_completed": true,
+      "score": 95.0,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 26.25,
+        "completeness": 15.0,
+        "suitability": 13.750000000000002,
+        "whole_assignment_coverage": 10.0
+      }
+    },
+    {
+      "run": "stack-C-R1",
+      "local_generation_completed": true,
+      "score": 96.25,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 26.25,
+        "completeness": 15.0,
+        "suitability": 15.0,
+        "whole_assignment_coverage": 10.0
+      }
+    },
+    {
+      "run": "sort-A-R1",
+      "local_generation_completed": true,
+      "score": 86.5625,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 22.5,
+        "completeness": 14.0625,
+        "suitability": 15.0,
+        "whole_assignment_coverage": 5.0
+      }
+    },
+    {
+      "run": "sort-C-R1",
+      "local_generation_completed": true,
+      "score": 94.75,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 25.5,
+        "completeness": 14.625,
+        "suitability": 14.625,
+        "whole_assignment_coverage": 10.0
+      }
+    },
+    {
+      "run": "search-A-R1",
+      "local_generation_completed": true,
+      "score": 80.9375,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 16.875,
+        "completeness": 15.0,
+        "suitability": 14.0625,
+        "whole_assignment_coverage": 5.0
+      }
+    },
+    {
+      "run": "search-B-R1",
+      "local_generation_completed": true,
+      "score": 92.7679,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 23.92857142857143,
+        "completeness": 13.839285714285715,
+        "suitability": 15.0,
+        "whole_assignment_coverage": 10.0
+      }
+    },
+    {
+      "run": "search-C-R1",
+      "local_generation_completed": true,
+      "score": 89.75,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 21.5,
+        "completeness": 13.25,
+        "suitability": 15.0,
+        "whole_assignment_coverage": 10.0
+      }
+    },
+    {
+      "run": "tree-A-R1",
+      "local_generation_completed": true,
+      "score": 85.9375,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 16.875,
+        "completeness": 15.0,
+        "suitability": 14.0625,
+        "whole_assignment_coverage": 10.0
+      }
+    },
+    {
+      "run": "tree-B-R1",
+      "local_generation_completed": true,
+      "score": 92.5,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 23.750000000000004,
+        "completeness": 14.374999999999998,
+        "suitability": 14.374999999999998,
+        "whole_assignment_coverage": 10.0
+      }
+    },
+    {
+      "run": "stack-A-R2",
+      "local_generation_completed": true,
+      "score": 88.75,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 22.5,
+        "completeness": 14.0625,
+        "suitability": 12.1875,
+        "whole_assignment_coverage": 10.0
+      }
+    },
+    {
+      "run": "sort-B-R2",
+      "local_generation_completed": true,
+      "score": 89.1071,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 25.17857142857143,
+        "completeness": 14.464285714285715,
+        "suitability": 14.464285714285715,
+        "whole_assignment_coverage": 5.0
+      }
+    },
+    {
+      "run": "tree-C-R2",
+      "local_generation_completed": true,
+      "score": 94.375,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 24.999999999999996,
+        "completeness": 15.0,
+        "suitability": 14.374999999999998,
+        "whole_assignment_coverage": 10.0
+      }
+    },
+    {
+      "run": "stack-B-R2",
+      "local_generation_completed": true,
+      "score": 95.625,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 26.25,
+        "completeness": 15.0,
+        "suitability": 14.374999999999998,
+        "whole_assignment_coverage": 10.0
+      }
+    },
+    {
+      "run": "stack-C-R2",
+      "local_generation_completed": true,
+      "score": 95.0,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 26.25,
+        "completeness": 15.0,
+        "suitability": 13.750000000000002,
+        "whole_assignment_coverage": 10.0
+      }
+    },
+    {
+      "run": "sort-A-R2",
+      "local_generation_completed": true,
+      "score": 86.5625,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 22.5,
+        "completeness": 14.0625,
+        "suitability": 15.0,
+        "whole_assignment_coverage": 5.0
+      }
+    },
+    {
+      "run": "sort-C-R2",
+      "local_generation_completed": true,
+      "score": 93.5,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 24.25,
+        "completeness": 14.625,
+        "suitability": 14.625,
+        "whole_assignment_coverage": 10.0
+      }
+    },
+    {
+      "run": "search-A-R2",
+      "local_generation_completed": true,
+      "score": 82.8125,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 20.625,
+        "completeness": 13.125,
+        "suitability": 14.0625,
+        "whole_assignment_coverage": 5.0
+      }
+    },
+    {
+      "run": "search-B-R2",
+      "local_generation_completed": true,
+      "score": 92.5,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 23.92857142857143,
+        "completeness": 14.196428571428571,
+        "suitability": 14.374999999999998,
+        "whole_assignment_coverage": 10.0
+      }
+    },
+    {
+      "run": "search-C-R2",
+      "local_generation_completed": true,
+      "score": 90.5,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 22.25,
+        "completeness": 13.25,
+        "suitability": 15.0,
+        "whole_assignment_coverage": 10.0
+      }
+    },
+    {
+      "run": "tree-A-R2",
+      "local_generation_completed": true,
+      "score": 82.8125,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 18.75,
+        "completeness": 15.0,
+        "suitability": 14.0625,
+        "whole_assignment_coverage": 5.0
+      }
+    },
+    {
+      "run": "tree-B-R2",
+      "local_generation_completed": true,
+      "score": 95.0,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 24.999999999999996,
+        "completeness": 15.0,
+        "suitability": 15.0,
+        "whole_assignment_coverage": 10.0
+      }
+    },
+    {
+      "run": "stack-A-R3",
+      "local_generation_completed": true,
+      "score": 91.5625,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 24.375,
+        "completeness": 15.0,
+        "suitability": 12.1875,
+        "whole_assignment_coverage": 10.0
+      }
+    },
+    {
+      "run": "sort-B-R3",
+      "local_generation_completed": true,
+      "score": 93.9286,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 24.464285714285715,
+        "completeness": 14.732142857142858,
+        "suitability": 14.732142857142858,
+        "whole_assignment_coverage": 10.0
+      }
+    },
+    {
+      "run": "tree-C-R3",
+      "local_generation_completed": true,
+      "score": 93.125,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 23.750000000000004,
+        "completeness": 14.374999999999998,
+        "suitability": 15.0,
+        "whole_assignment_coverage": 10.0
+      }
+    },
+    {
+      "run": "stack-B-R3",
+      "local_generation_completed": true,
+      "score": 96.25,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 27.500000000000004,
+        "completeness": 15.0,
+        "suitability": 13.750000000000002,
+        "whole_assignment_coverage": 10.0
+      }
+    },
+    {
+      "run": "stack-C-R3",
+      "local_generation_completed": true,
+      "score": 96.25,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 26.25,
+        "completeness": 15.0,
+        "suitability": 15.0,
+        "whole_assignment_coverage": 10.0
+      }
+    },
+    {
+      "run": "sort-A-R3",
+      "local_generation_completed": true,
+      "score": 84.6875,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 20.625,
+        "completeness": 14.0625,
+        "suitability": 15.0,
+        "whole_assignment_coverage": 5.0
+      }
+    },
+    {
+      "run": "sort-C-R3",
+      "local_generation_completed": true,
+      "score": 96.875,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 27.500000000000004,
+        "completeness": 14.374999999999998,
+        "suitability": 15.0,
+        "whole_assignment_coverage": 10.0
+      }
+    },
+    {
+      "run": "search-A-R3",
+      "local_generation_completed": true,
+      "score": 80.9375,
+      "breakdown": {
+        "scope": 28.125,
+        "correctness": 18.75,
+        "completeness": 14.0625,
+        "suitability": 15.0,
+        "whole_assignment_coverage": 5.0
+      }
+    },
+    {
+      "run": "search-B-R3",
+      "local_generation_completed": false,
+      "score": null,
+      "breakdown": null
+    },
+    {
+      "run": "search-C-R3",
+      "local_generation_completed": true,
+      "score": 89.375,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 21.5,
+        "completeness": 12.875,
+        "suitability": 15.0,
+        "whole_assignment_coverage": 10.0
+      }
+    },
+    {
+      "run": "tree-A-R3",
+      "local_generation_completed": true,
+      "score": 82.8125,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 18.75,
+        "completeness": 14.0625,
+        "suitability": 15.0,
+        "whole_assignment_coverage": 5.0
+      }
+    },
+    {
+      "run": "tree-B-R3",
+      "local_generation_completed": true,
+      "score": 88.75,
+      "breakdown": {
+        "scope": 30.0,
+        "correctness": 24.999999999999996,
+        "completeness": 15.0,
+        "suitability": 13.750000000000002,
+        "whole_assignment_coverage": 5.0
+      }
+    }
+  ],
+  "source_sha256": "c381f7abe0386260619adf290f65b2c1fc7e3e570e536144816ce39964a75a63",
+  "limitations": [
+    "Assistant-assisted preliminary review, not independent teacher validation or an answer-accuracy estimate.",
+    "Content variants share reading judgments; execution evidence is checked per occurrence. Repeated occurrences are not independent samples.",
+    "The incomplete assignment has no full-content score and remains a failure in the 36-run completion denominator.",
+    "Raw private material is excluded. Public scores support arithmetic checks, not independent content regrading.",
+    "Finite reference execution does not establish correctness for all inputs. The review does not automatically score new questions.",
+    "Classic-question reuse is not itself a quality defect. Difficulty has not been calibrated with student response data."
+  ]
+}

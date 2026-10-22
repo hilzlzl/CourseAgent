@@ -1,0 +1,258 @@
+[
+  {
+    "run_id": "string-B-R1-retry1",
+    "case_id": "string-B",
+    "round": 1,
+    "original_run_id": "string-B-R1",
+    "complete": true,
+    "unassisted_within_deadline": true,
+    "ordinary_count": 14,
+    "programming_count": 6,
+    "export_elapsed_seconds": 475.41551518440247,
+    "logical_model_calls": 53,
+    "usage": {
+      "logical_model_spans": 53,
+      "failed_model_spans": 0,
+      "reported_tokens": 161705,
+      "spans_with_reported_usage": 53,
+      "spans_missing_usage": 0,
+      "actual_http_requests": null,
+      "actual_api_cost": null,
+      "prompt_tokens": 140245,
+      "prompt_tokens_coverage": 53,
+      "completion_tokens": 21460,
+      "completion_tokens_coverage": 53,
+      "reasoning_tokens": 0,
+      "reasoning_tokens_coverage": 53
+    },
+    "case_counts": {
+      "public": 19,
+      "hidden": 83
+    },
+    "finite_oracle_comparisons": {
+      "passed": 0,
+      "unassessed": 102,
+      "flagged": 0
+    },
+    "execute": false
+  },
+  {
+    "run_id": "string-C-R1-retry1",
+    "case_id": "string-C",
+    "round": 1,
+    "original_run_id": "string-C-R1",
+    "complete": true,
+    "unassisted_within_deadline": true,
+    "ordinary_count": 10,
+    "programming_count": 6,
+    "export_elapsed_seconds": 792.0125172138214,
+    "logical_model_calls": 94,
+    "usage": {
+      "logical_model_spans": 94,
+      "failed_model_spans": 3,
+      "reported_tokens": 269367,
+      "spans_with_reported_usage": 91,
+      "spans_missing_usage": 3,
+      "actual_http_requests": null,
+      "actual_api_cost": null,
+      "prompt_tokens": 235102,
+      "prompt_tokens_coverage": 91,
+      "completion_tokens": 34265,
+      "completion_tokens_coverage": 91,
+      "reasoning_tokens": 0,
+      "reasoning_tokens_coverage": 91
+    },
+    "case_counts": {
+      "public": 15,
+      "hidden": 87
+    },
+    "finite_oracle_comparisons": {
+      "passed": 0,
+      "unassessed": 102,
+      "flagged": 0
+    },
+    "execute": false
+  },
+  {
+    "run_id": "graph-B-R1-retry1",
+    "case_id": "graph-B",
+    "round": 1,
+    "original_run_id": "graph-B-R1",
+    "complete": false,
+    "unassisted_within_deadline": false,
+    "ordinary_count": 14,
+    "programming_count": 3,
+    "export_elapsed_seconds": null,
+    "logical_model_calls": 140,
+    "usage": {
+      "logical_model_spans": 140,
+      "failed_model_spans": 1,
+      "reported_tokens": 272314,
+      "spans_with_reported_usage": 139,
+      "spans_missing_usage": 1,
+      "actual_http_requests": null,
+      "actual_api_cost": null,
+      "prompt_tokens": 239690,
+      "prompt_tokens_coverage": 139,
+      "completion_tokens": 32624,
+      "completion_tokens_coverage": 139,
+      "reasoning_tokens": 0,
+      "reasoning_tokens_coverage": 139
+    },
+    "case_counts": {
+      "public": 7,
+      "hidden": 41
+    },
+    "finite_oracle_comparisons": {
+      "passed": 0,
+      "unassessed": 48,
+      "flagged": 0
+    },
+    "execute": false
+  },
+  {
+    "run_id": "graph-A-R2-retry1",
+    "case_id": "graph-A",
+    "round": 2,
+    "original_run_id": "graph-A-R2",
+    "complete": false,
+    "unassisted_within_deadline": false,
+    "ordinary_count": 0,
+    "programming_count": 0,
+    "export_elapsed_seconds": null,
+    "logical_model_calls": 148,
+    "usage": {
+      "logical_model_spans": 148,
+      "failed_model_spans": 3,
+      "reported_tokens": 229762,
+      "spans_with_reported_usage": 145,
+      "spans_missing_usage": 3,
+      "actual_http_requests": null,
+      "actual_api_cost": null,
+      "prompt_tokens": 202777,
+      "prompt_tokens_coverage": 145,
+      "completion_tokens": 26985,
+      "completion_tokens_coverage": 145,
+      "reasoning_tokens": 0,
+      "reasoning_tokens_coverage": 145
+    },
+    "case_counts": {},
+    "finite_oracle_comparisons": {
+      "passed": 0,
+      "unassessed": 0,
+      "flagged": 0
+    },
+    "execute": false
+  },
+  {
+    "run_id": "string-B-R3-retry1",
+    "case_id": "string-B",
+    "round": 3,
+    "original_run_id": "string-B-R3",
+    "complete": true,
+    "unassisted_within_deadline": true,
+    "ordinary_count": 14,
+    "programming_count": 6,
+    "export_elapsed_seconds": 395.01928091049194,
+    "logical_model_calls": 30,
+    "usage": {
+      "logical_model_spans": 30,
+      "failed_model_spans": 1,
+      "reported_tokens": 61641,
+      "spans_with_reported_usage": 29,
+      "spans_missing_usage": 1,
+      "actual_http_requests": null,
+      "actual_api_cost": null,
+      "prompt_tokens": 46895,
+      "prompt_tokens_coverage": 29,
+      "completion_tokens": 14746,
+      "completion_tokens_coverage": 29,
+      "reasoning_tokens": 0,
+      "reasoning_tokens_coverage": 29
+    },
+    "case_counts": {
+      "public": 18,
+      "hidden": 85
+    },
+    "finite_oracle_comparisons": {
+      "passed": 0,
+      "unassessed": 103,
+      "flagged": 0
+    },
+    "execute": false
+  },
+  {
+    "run_id": "graph-A-R3-retry1",
+    "case_id": "graph-A",
+    "round": 3,
+    "original_run_id": "graph-A-R3",
+    "complete": false,
+    "unassisted_within_deadline": false,
+    "ordinary_count": 0,
+    "programming_count": 5,
+    "export_elapsed_seconds": null,
+    "logical_model_calls": 148,
+    "usage": {
+      "logical_model_spans": 148,
+      "failed_model_spans": 4,
+      "reported_tokens": 254740,
+      "spans_with_reported_usage": 144,
+      "spans_missing_usage": 4,
+      "actual_http_requests": null,
+      "actual_api_cost": null,
+      "prompt_tokens": 220468,
+      "prompt_tokens_coverage": 144,
+      "completion_tokens": 34272,
+      "completion_tokens_coverage": 144,
+      "reasoning_tokens": 0,
+      "reasoning_tokens_coverage": 144
+    },
+    "case_counts": {
+      "public": 10,
+      "hidden": 69
+    },
+    "finite_oracle_comparisons": {
+      "passed": 0,
+      "unassessed": 79,
+      "flagged": 0
+    },
+    "execute": false
+  },
+  {
+    "run_id": "string-C-R3-retry1",
+    "case_id": "string-C",
+    "round": 3,
+    "original_run_id": "string-C-R3",
+    "complete": false,
+    "unassisted_within_deadline": false,
+    "ordinary_count": 6,
+    "programming_count": 6,
+    "export_elapsed_seconds": null,
+    "logical_model_calls": 31,
+    "usage": {
+      "logical_model_spans": 31,
+      "failed_model_spans": 0,
+      "reported_tokens": 131759,
+      "spans_with_reported_usage": 31,
+      "spans_missing_usage": 0,
+      "actual_http_requests": null,
+      "actual_api_cost": null,
+      "prompt_tokens": 116569,
+      "prompt_tokens_coverage": 31,
+      "completion_tokens": 15190,
+      "completion_tokens_coverage": 31,
+      "reasoning_tokens": 0,
+      "reasoning_tokens_coverage": 31
+    },
+    "case_counts": {
+      "public": 15,
+      "hidden": 82
+    },
+    "finite_oracle_comparisons": {
+      "passed": 0,
+      "unassessed": 97,
+      "flagged": 0
+    },
+    "execute": false
+  }
+]

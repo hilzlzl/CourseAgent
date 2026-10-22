@@ -1,0 +1,43 @@
+{
+  "design": "append_only_observational_extension_with_selected_failure_retries",
+  "historical_requests": 12,
+  "extension_requests": 8,
+  "repetitions_per_request": 3,
+  "unique_slots": 60,
+  "required_questions": {
+    "ordinary": 474,
+    "programming": 402,
+    "total": 876
+  },
+  "requested_model_settings": {
+    "backend": "langchain",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "max_output_tokens": 16384
+  },
+  "provider_model_version_independently_certified": false,
+  "python_version_recorded_for_extension": "3.12.3",
+  "deadline_seconds": 3600,
+  "execute": false,
+  "platform_writes": 0,
+  "first_pass": "Retain all 36 historical and 24 extension attempts, including incomplete ones.",
+  "retry_selection": "All seven incomplete extension slots; historical search-B-R3 excluded.",
+  "retry_limit_per_selected_slot": 1,
+  "replacement_policy": "Use the retry for all seven selected slots, including worse or incomplete results; never best-of-two or question merging.",
+  "runtime": "Historical runtime source hashes and model settings restored for extension and retries; published application is a later packaging revision.",
+  "history": "Continue complete historical assignments; rolling last 30; retries continue current history.",
+  "cache": "Warm cache snapshot at extension start; original historical cache cannot be reconstructed; retries continue current cache.",
+  "latency": "Time to local export; only complete, unassisted attempts within 3600 seconds. Selected latency excludes superseded attempts and inter-attempt waiting.",
+  "repeat": "Complete assignments only. Maximum one-to-one identity matching / smaller question count for each same-request round pair, then pair mean per request, then request macro mean.",
+  "finite_oracles": "Finite post-hoc algorithm checks; some input/output codecs are shared with production verification; not universal independent correctness.",
+  "not_measured": [
+    "new_direct_API_control",
+    "new_human_control",
+    "independent_teacher_scores",
+    "teacher_active_time",
+    "actual_HTTP_requests",
+    "billed_API_cost"
+  ],
+  "public_scope": "Numeric records, sanitized request descriptions and pair counts. Private course attachments, question bodies, programs, hidden cases, caches and traces are excluded.",
+  "reproduction_limit": "Public checks reproduce arithmetic, not the private content judgments or historical live run environment."
+}

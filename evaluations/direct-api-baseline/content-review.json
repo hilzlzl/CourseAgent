@@ -1,0 +1,1011 @@
+{
+  "format": "courseagent-assistant-content-review-v1",
+  "reviewed_at": "2026-10-20",
+  "arm": "direct_model_API_without_CourseAgent_workflow",
+  "requested_model": "gpt-6.1-sol",
+  "review_status": "retrospective_assistant_review_not_independent_acceptance",
+  "rubric": {
+    "question_weights": {
+      "scope": 30,
+      "correctness": 30,
+      "completeness": 15,
+      "suitability": 15
+    },
+    "assignment_coverage_weight": 10,
+    "labels": {
+      "0": "实质不合格",
+      "1": "需修改或证据不足（历史助手初评约定）",
+      "2": "本次助手复核未见需改点或有限程序证据支持"
+    },
+    "mixed_task_weighting": "ordinary_and_programming_equal_50_percent_each",
+    "pure_programming_weighting": "programming_100_percent",
+    "score_scope": "题目内容初评；完整参考程序、解析和样例交付另设硬门槛，不能被内容均分抵消。",
+    "normative_difference": "testing-scorecard要求未知标未评估、不生成完整质量总分；历史助手初评却把编程证据不足记1。本文件仅复用历史参考分以追溯90.7口径，严格质量总分保持null。"
+  },
+  "evidence_policy": "Match the project historical labels, group weighting and evidence rule; post-response execution is distinguished from generation.",
+  "reviewed_questions": 44,
+  "independent_general_agent_runs": 0,
+  "direct_model_api_runs": 3,
+  "source_evidence_sha256": {
+    "stack-A-D1_record.json": "106695009c91c1e2dc59dabec47a860042886b96a3a0b7b35048999cb60bc23f",
+    "stack-A-D1_request-private.json": "580d74093c41b031f2b4804bf5b0d337a0de82e9f65228546eb5d0f6f467054b",
+    "stack-A-D1_response.md": "c71cf773f42982bc416035704356b47bd3a190775247aa07fd398fee9f1e36e7",
+    "stack-A-D1_returned-generator.py": "d25392abb7f88717f2734cb5213c899704098197765058db727bce7ccf79606d",
+    "stack-A-D1_reference-execution-audit.json": "2ccb8348761822ff6664abbaa8d23927d5c59798d182db8b091d099f2670322d",
+    "stack-A-D1_materialization-audit.json": "b9488c1fe06faacf8fce8ab53cee868b841791b18baa60cff2a6f64129b2a95f",
+    "sort-B-D1_record.json": "ffdeecf5f8bd066874418eb7614c1374df47fa61cbf12809edf3230256598ca5",
+    "sort-B-D1_request-private.json": "8e842fc130359758585ebbbef86fea234798b1dc246f48f2378dde5f7dd1af2f",
+    "sort-B-D1_response.md": "e3a338da86357996a835be12af58c1b1a47e3b8460023eebd9ff4c43b8beab75",
+    "sort-B-D1_returned-generator.py": "e9a56c6daccb62edc1927d9ea655f03fe1cc8d40ffda5c0f0f5b9151eb1cd763",
+    "sort-B-D1_reference-execution-audit.json": "54a06ce55e82c41392f2d91dea5a84813bc55213e8f64db96a84fbeb5d4cdb09",
+    "sort-B-D1_materialization-audit.json": "61e17755413a95b2f1121fd164953a9dcb3c7dbfd35cc0fe54346c4980b67dac",
+    "tree-C-D1_record.json": "e81f57801226283d8a672396e58a458fc4cb51cdd59b12f18ab2281301a4a4ba",
+    "tree-C-D1_request-private.json": "1b5c00323afdbc05750d9229970d94eecec543a0faec874e05c3c723bd544a29",
+    "tree-C-D1_response.md": "86027adafa1d24f41e3616908cbf411cabce4baeaf9ba9b9ba9f427772c97c89",
+    "tree-C-D1_returned-generator.py": "6b877dc735e058666c9d7546a1374d85c7ed3f9f8f6a15c90e63e6b2ee5701c4",
+    "tree-C-D1_reference-execution-audit.json": "45ae8ebef2284a3866fe2311d169299b462fd749d777731e92b604a199aa351a",
+    "tree-C-D1_materialization-audit.json": "fe4eed74ac948abe46243845fc8d88875fce91785e48c068d265eb6e4ce542f2"
+  },
+  "questions": [
+    {
+      "run_id": "stack-A-D1",
+      "kind": "programming",
+      "ordinal": 1,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "原样脚本可形成完整题面、解析和标准输入输出参考程序；事后执行入口与自生成期望输出一致，但未取得独立算法输出证据，按历史初评约定正确性记1。"
+      ],
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 10,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 10
+        },
+        "independent_all_saved_cases_agree": false,
+        "execution_timing": "post_response_external_audit_not_API_generation",
+        "correctness_note": "参考程序与其自身生成的输出一致不等于独立算法复核。"
+      }
+    },
+    {
+      "run_id": "stack-A-D1",
+      "kind": "programming",
+      "ordinal": 2,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "原样脚本可形成完整题面、解析和标准输入输出参考程序；事后执行入口与自生成期望输出一致，但未取得独立算法输出证据，按历史初评约定正确性记1。"
+      ],
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 10,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 10
+        },
+        "independent_all_saved_cases_agree": false,
+        "execution_timing": "post_response_external_audit_not_API_generation",
+        "correctness_note": "参考程序与其自身生成的输出一致不等于独立算法复核。"
+      }
+    },
+    {
+      "run_id": "stack-A-D1",
+      "kind": "programming",
+      "ordinal": 3,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "原样脚本可形成完整题面、解析和标准输入输出参考程序；事后执行入口与自生成期望输出一致，但未取得独立算法输出证据，按历史初评约定正确性记1。"
+      ],
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 10,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 10
+        },
+        "independent_all_saved_cases_agree": false,
+        "execution_timing": "post_response_external_audit_not_API_generation",
+        "correctness_note": "参考程序与其自身生成的输出一致不等于独立算法复核。"
+      }
+    },
+    {
+      "run_id": "stack-A-D1",
+      "kind": "programming",
+      "ordinal": 4,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "原样脚本可形成完整题面、解析和标准输入输出参考程序；事后执行入口与自生成期望输出一致，但未取得独立算法输出证据，按历史初评约定正确性记1。"
+      ],
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 10,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 10
+        },
+        "independent_all_saved_cases_agree": false,
+        "execution_timing": "post_response_external_audit_not_API_generation",
+        "correctness_note": "参考程序与其自身生成的输出一致不等于独立算法复核。"
+      }
+    },
+    {
+      "run_id": "stack-A-D1",
+      "kind": "programming",
+      "ordinal": 5,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 1
+      },
+      "reasons": [
+        "原样脚本可形成完整题面、解析和标准输入输出参考程序；事后执行入口与自生成期望输出一致，但未取得独立算法输出证据，按历史初评约定正确性记1。",
+        "单调栈/单调队列的线性复杂度约束需要额外先修或推导，对只已学完本章基础的学生应标进阶；沿用项目历史对同类题的先修扣分逻辑。"
+      ],
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 10,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 10
+        },
+        "independent_all_saved_cases_agree": false,
+        "execution_timing": "post_response_external_audit_not_API_generation",
+        "correctness_note": "参考程序与其自身生成的输出一致不等于独立算法复核。"
+      }
+    },
+    {
+      "run_id": "stack-A-D1",
+      "kind": "programming",
+      "ordinal": 6,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 1
+      },
+      "reasons": [
+        "原样脚本可形成完整题面、解析和标准输入输出参考程序；事后执行入口与自生成期望输出一致，但未取得独立算法输出证据，按历史初评约定正确性记1。",
+        "单调栈/单调队列的线性复杂度约束需要额外先修或推导，对只已学完本章基础的学生应标进阶；沿用项目历史对同类题的先修扣分逻辑。"
+      ],
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 10,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 10
+        },
+        "independent_all_saved_cases_agree": false,
+        "execution_timing": "post_response_external_audit_not_API_generation",
+        "correctness_note": "参考程序与其自身生成的输出一致不等于独立算法复核。"
+      }
+    },
+    {
+      "run_id": "stack-A-D1",
+      "kind": "programming",
+      "ordinal": 7,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "原样脚本可形成完整题面、解析和标准输入输出参考程序；事后执行入口与自生成期望输出一致，但未取得独立算法输出证据，按历史初评约定正确性记1。"
+      ],
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 10,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 10
+        },
+        "independent_all_saved_cases_agree": false,
+        "execution_timing": "post_response_external_audit_not_API_generation",
+        "correctness_note": "参考程序与其自身生成的输出一致不等于独立算法复核。"
+      }
+    },
+    {
+      "run_id": "stack-A-D1",
+      "kind": "programming",
+      "ordinal": 8,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "原样脚本可形成完整题面、解析和标准输入输出参考程序；事后执行入口与自生成期望输出一致，但未取得独立算法输出证据，按历史初评约定正确性记1。"
+      ],
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 10,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 10
+        },
+        "independent_all_saved_cases_agree": false,
+        "execution_timing": "post_response_external_audit_not_API_generation",
+        "correctness_note": "参考程序与其自身生成的输出一致不等于独立算法复核。"
+      }
+    },
+    {
+      "run_id": "sort-B-D1",
+      "kind": "ordinary",
+      "ordinal": 1,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "插入5后为[4,5,7,9]，答案A及右移9、7的解析一致。 助手阅读复核，非独立教师评分。"
+      ],
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-D1",
+      "kind": "ordinary",
+      "ordinal": 2,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "按题设从左到右冒泡一趟为[1,4,2,5,8]，答案A和过程一致。 助手阅读复核，非独立教师评分。"
+      ],
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-D1",
+      "kind": "ordinary",
+      "ordinal": 3,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "题干明确相等键的处理约定，常见堆排序不稳定，答案C成立。 助手阅读复核，非独立教师评分。"
+      ],
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-D1",
+      "kind": "ordinary",
+      "ordinal": 4,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "互异升序且固定首元素枢轴，划分极不平衡，最坏Θ(n²)，答案D成立。 助手阅读复核，非独立教师评分。"
+      ],
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-D1",
+      "kind": "ordinary",
+      "ordinal": 5,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "归并辅助数组Θ(n)加递归栈Θ(log n)合计Θ(n)，答案C成立。 助手阅读复核，非独立教师评分。"
+      ],
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-D1",
+      "kind": "ordinary",
+      "ordinal": 6,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "给定整数值域及足够辅助空间，计数排序Θ(n+k)，答案A成立。 助手阅读复核，非独立教师评分。"
+      ],
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-D1",
+      "kind": "ordinary",
+      "ordinal": 7,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "输入已按学号升序，对成绩稳定降序可保留同分学号顺序，答案B成立。 助手阅读复核，非独立教师评分。"
+      ],
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-D1",
+      "kind": "ordinary",
+      "ordinal": 8,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "小规模近乎有序时直接插入能利用少量逆序，答案A及限定措辞成立。 助手阅读复核，非独立教师评分。"
+      ],
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-D1",
+      "kind": "ordinary",
+      "ordinal": 9,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "稳定性允许相同关键字并约束其相对次序，原断言错误，解析一致。 助手阅读复核，非独立教师评分。"
+      ],
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-D1",
+      "kind": "ordinary",
+      "ordinal": 10,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "指定每趟全扫描的选择排序，比较次数n(n−1)/2，最好仍Θ(n²)，判对成立。 助手阅读复核，非独立教师评分。"
+      ],
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-D1",
+      "kind": "ordinary",
+      "ordinal": 11,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "平均Θ(n log n)不能推出任意输入均如此，快速排序有平方最坏情形，判错成立。 助手阅读复核，非独立教师评分。"
+      ],
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-D1",
+      "kind": "ordinary",
+      "ordinal": 12,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "完整一趟相邻比较无交换意味着无相邻逆序，可提前结束，判对成立。 助手阅读复核，非独立教师评分。"
+      ],
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-D1",
+      "kind": "ordinary",
+      "ordinal": 13,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "递归快速排序还需计栈空间，划分原地不能推出总辅助空间恒定，判错成立。 助手阅读复核，非独立教师评分。"
+      ],
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-D1",
+      "kind": "ordinary",
+      "ordinal": 14,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "内存不足时分块内部排序并多路归并是外部归并的基本过程，判对成立。 助手阅读复核，非独立教师评分。"
+      ],
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-D1",
+      "kind": "programming",
+      "ordinal": 1,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "原样脚本可形成完整题面、解析和标准输入输出参考程序；事后执行入口与自生成期望输出一致，但未取得独立算法输出证据，按历史初评约定正确性记1。"
+      ],
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 10,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 10
+        },
+        "independent_all_saved_cases_agree": false,
+        "execution_timing": "post_response_external_audit_not_API_generation",
+        "correctness_note": "参考程序与其自身生成的输出一致不等于独立算法复核。"
+      }
+    },
+    {
+      "run_id": "sort-B-D1",
+      "kind": "programming",
+      "ordinal": 2,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "原样脚本可形成完整题面、解析和标准输入输出参考程序；事后执行入口与自生成期望输出一致，但未取得独立算法输出证据，按历史初评约定正确性记1。"
+      ],
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 10,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 10
+        },
+        "independent_all_saved_cases_agree": false,
+        "execution_timing": "post_response_external_audit_not_API_generation",
+        "correctness_note": "参考程序与其自身生成的输出一致不等于独立算法复核。"
+      }
+    },
+    {
+      "run_id": "sort-B-D1",
+      "kind": "programming",
+      "ordinal": 3,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "原样脚本可形成完整题面、解析和标准输入输出参考程序；事后执行入口与自生成期望输出一致，但未取得独立算法输出证据，按历史初评约定正确性记1。"
+      ],
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 10,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 10
+        },
+        "independent_all_saved_cases_agree": false,
+        "execution_timing": "post_response_external_audit_not_API_generation",
+        "correctness_note": "参考程序与其自身生成的输出一致不等于独立算法复核。"
+      }
+    },
+    {
+      "run_id": "sort-B-D1",
+      "kind": "programming",
+      "ordinal": 4,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "原样脚本可形成完整题面、解析和标准输入输出参考程序；事后执行入口与自生成期望输出一致，但未取得独立算法输出证据，按历史初评约定正确性记1。"
+      ],
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 10,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 10
+        },
+        "independent_all_saved_cases_agree": false,
+        "execution_timing": "post_response_external_audit_not_API_generation",
+        "correctness_note": "参考程序与其自身生成的输出一致不等于独立算法复核。"
+      }
+    },
+    {
+      "run_id": "sort-B-D1",
+      "kind": "programming",
+      "ordinal": 5,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "原样脚本可形成完整题面、解析和标准输入输出参考程序；事后执行入口与自生成期望输出一致，但未取得独立算法输出证据，按历史初评约定正确性记1。"
+      ],
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 10,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 10
+        },
+        "independent_all_saved_cases_agree": false,
+        "execution_timing": "post_response_external_audit_not_API_generation",
+        "correctness_note": "参考程序与其自身生成的输出一致不等于独立算法复核。"
+      }
+    },
+    {
+      "run_id": "sort-B-D1",
+      "kind": "programming",
+      "ordinal": 6,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "原样脚本可形成完整题面、解析和标准输入输出参考程序；事后执行入口与自生成期望输出一致，但未取得独立算法输出证据，按历史初评约定正确性记1。"
+      ],
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 10,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 10
+        },
+        "independent_all_saved_cases_agree": false,
+        "execution_timing": "post_response_external_audit_not_API_generation",
+        "correctness_note": "参考程序与其自身生成的输出一致不等于独立算法复核。"
+      }
+    },
+    {
+      "run_id": "tree-C-D1",
+      "kind": "ordinary",
+      "ordinal": 1,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "非空二叉树n0=n2+1=13，核对答案C与解析。 助手阅读复核，非独立教师评分。"
+      ],
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "tree-C-D1",
+      "kind": "ordinary",
+      "ordinal": 2,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "完全树1起始编号，结点4孩子为8、9且均不超过10，核对答案B。 助手阅读复核，非独立教师评分。"
+      ],
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "tree-C-D1",
+      "kind": "ordinary",
+      "ordinal": 3,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "B右孩子D、C左孩子E，后序D B E C A，核对答案C。 助手阅读复核，非独立教师评分。"
+      ],
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "tree-C-D1",
+      "kind": "ordinary",
+      "ordinal": 4,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "先序根A，中序根左侧D B E对应左子树先序B D E，左孩子B，核对答案B。 助手阅读复核，非独立教师评分。"
+      ],
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "tree-C-D1",
+      "kind": "ordinary",
+      "ordinal": 5,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "队列先入左孩子再入右孩子可保持同层从左到右，核对答案C。 助手阅读复核，非独立教师评分。"
+      ],
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "tree-C-D1",
+      "kind": "ordinary",
+      "ordinal": 6,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "哈夫曼合并2+3=5、5+7=12、9+12=21，总位数38，核对答案B。 助手阅读复核，非独立教师评分。"
+      ],
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "tree-C-D1",
+      "kind": "ordinary",
+      "ordinal": 7,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "二叉树有序区分左右孩子，只有一个孩子时也须区分，判错成立。 助手阅读复核，非独立教师评分。"
+      ],
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "tree-C-D1",
+      "kind": "ordinary",
+      "ordinal": 8,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "明确普通二叉链表和不计外部根指针，空孩子指针2n−(n−1)=n+1，判对成立。 助手阅读复核，非独立教师评分。"
+      ],
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "tree-C-D1",
+      "kind": "ordinary",
+      "ordinal": 9,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "先序A B、后序B A既可有左孩子也可有右孩子，通常不唯一，判错成立。 助手阅读复核，非独立教师评分。"
+      ],
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "tree-C-D1",
+      "kind": "ordinary",
+      "ordinal": 10,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "双目表达式树后序先求两操作数再运算，适合递归求值，判对成立。 助手阅读复核，非独立教师评分。"
+      ],
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "tree-C-D1",
+      "kind": "programming",
+      "ordinal": 1,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "原样脚本可形成完整题面、解析和标准输入输出参考程序；事后执行入口与自生成期望输出一致，但未取得独立算法输出证据，按历史初评约定正确性记1。"
+      ],
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 10,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 10
+        },
+        "independent_all_saved_cases_agree": false,
+        "execution_timing": "post_response_external_audit_not_API_generation",
+        "correctness_note": "参考程序与其自身生成的输出一致不等于独立算法复核。"
+      }
+    },
+    {
+      "run_id": "tree-C-D1",
+      "kind": "programming",
+      "ordinal": 2,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "原样脚本可形成完整题面、解析和标准输入输出参考程序；事后执行入口与自生成期望输出一致，但未取得独立算法输出证据，按历史初评约定正确性记1。"
+      ],
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 10,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 10
+        },
+        "independent_all_saved_cases_agree": false,
+        "execution_timing": "post_response_external_audit_not_API_generation",
+        "correctness_note": "参考程序与其自身生成的输出一致不等于独立算法复核。"
+      }
+    },
+    {
+      "run_id": "tree-C-D1",
+      "kind": "programming",
+      "ordinal": 3,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "原样脚本可形成完整题面、解析和标准输入输出参考程序；事后执行入口与自生成期望输出一致，但未取得独立算法输出证据，按历史初评约定正确性记1。"
+      ],
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 10,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 10
+        },
+        "independent_all_saved_cases_agree": false,
+        "execution_timing": "post_response_external_audit_not_API_generation",
+        "correctness_note": "参考程序与其自身生成的输出一致不等于独立算法复核。"
+      }
+    },
+    {
+      "run_id": "tree-C-D1",
+      "kind": "programming",
+      "ordinal": 4,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "原样脚本可形成完整题面、解析和标准输入输出参考程序；事后执行入口与自生成期望输出一致，但未取得独立算法输出证据，按历史初评约定正确性记1。"
+      ],
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 10,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 10
+        },
+        "independent_all_saved_cases_agree": false,
+        "execution_timing": "post_response_external_audit_not_API_generation",
+        "correctness_note": "参考程序与其自身生成的输出一致不等于独立算法复核。"
+      }
+    },
+    {
+      "run_id": "tree-C-D1",
+      "kind": "programming",
+      "ordinal": 5,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "原样脚本可形成完整题面、解析和标准输入输出参考程序；事后执行入口与自生成期望输出一致，但未取得独立算法输出证据，按历史初评约定正确性记1。"
+      ],
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 10,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 10
+        },
+        "independent_all_saved_cases_agree": false,
+        "execution_timing": "post_response_external_audit_not_API_generation",
+        "correctness_note": "参考程序与其自身生成的输出一致不等于独立算法复核。"
+      }
+    },
+    {
+      "run_id": "tree-C-D1",
+      "kind": "programming",
+      "ordinal": 6,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "原样脚本可形成完整题面、解析和标准输入输出参考程序；事后执行入口与自生成期望输出一致，但未取得独立算法输出证据，按历史初评约定正确性记1。"
+      ],
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 10,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 10
+        },
+        "independent_all_saved_cases_agree": false,
+        "execution_timing": "post_response_external_audit_not_API_generation",
+        "correctness_note": "参考程序与其自身生成的输出一致不等于独立算法复核。"
+      }
+    }
+  ],
+  "assignments": [
+    {
+      "run_id": "stack-A-D1",
+      "coverage_label": 2,
+      "coverage_reason": "覆盖有界栈、循环队列、出栈序列、匹配与队列应用，整套互补。",
+      "independent_quality_total": null,
+      "independent_teacher_score": null
+    },
+    {
+      "run_id": "sort-B-D1",
+      "coverage_label": 2,
+      "coverage_reason": "覆盖具体插入与冒泡过程、稳定性、时空复杂度、归并计数、堆与计数排序及应用。",
+      "independent_quality_total": null,
+      "independent_teacher_score": null
+    },
+    {
+      "run_id": "tree-C-D1",
+      "coverage_label": 2,
+      "coverage_reason": "覆盖基本性质、三种深度遍历、层序、遍历重建、表达式树及课件哈夫曼应用；课件全文含对应算法。",
+      "independent_quality_total": null,
+      "independent_teacher_score": null
+    }
+  ],
+  "limitations": [
+    "回顾性的助手评分，不是独立教师盲评。",
+    "两组工具和总推理预算不同，不能归因为单一工作流组件。",
+    "本次只做直接API，无联网和执行工具，不代表带工具的通用Agent。",
+    "参考分含证据充分度，两组独立固定算法覆盖不同，不可据小分差排名。",
+    "原始返回脚本被原样事后执行，不将事后验收算为模型实际执行。"
+  ]
+}

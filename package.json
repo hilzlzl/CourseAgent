@@ -1,0 +1,17 @@
+{
+  "name": "educoder-exam-assistant",
+  "version": "0.12.0",
+  "private": true,
+  "description": "Recoverable local LangGraph agent for course assignments and sandboxed programming tests",
+  "scripts": {
+    "test": "node tests/browser/test_source_browser.cjs",
+    "test:adapters": "node tests/browser/test_bulk_delivery.cjs && node tests/browser/test_coding_upload_efficiency.cjs && node tests/browser/test_delivery_resume.cjs && node tests/browser/test_persisted_case_readback.cjs && node tests/browser/test_programming_delivery.cjs"
+  },
+  "dependencies": {
+    "playwright": ">=1.55 <2"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,63 @@
+[
+  {
+    "id": "demo-programming-1",
+    "title": "统计正数个数（原创固定示例）",
+    "description": "输入两行：第一行为整数 n（1 ≤ n ≤ 100），第二行为 n 个整数（-100 ≤ ai ≤ 100）。输出其中严格大于零的整数个数。",
+    "score": 10,
+    "difficulty": 1,
+    "time_limit_seconds": 3,
+    "languages": [
+      {
+        "language": "Python",
+        "starter_code": ""
+      }
+    ],
+    "selected": true,
+    "approved": false,
+    "knowledge": "顺序扫描与边界处理",
+    "source": "项目原创固定示例",
+    "source_refs": [],
+    "reference_code": "import sys\nvalues = list(map(int, sys.stdin.read().split()))\nn, items = values[0], values[1:]\nassert 1 <= n <= 100 and len(items) == n\nprint(sum(x > 0 for x in items))\n",
+    "explanation": "顺序扫描整数；零不是正数。",
+    "public_examples": [
+      {
+        "input": "4\n-1 0 2 3\n",
+        "output": "2\n"
+      }
+    ],
+    "test_cases": [
+      {
+        "input": "4\n-1 0 2 3\n",
+        "output": "2\n",
+        "visibility": "public",
+        "purpose": "正负整数与零混合",
+        "output_basis": "2 和 3 是正数，共 2 个。",
+        "verified": true
+      },
+      {
+        "input": "1\n0\n",
+        "output": "0\n",
+        "visibility": "hidden",
+        "purpose": "零的边界",
+        "output_basis": "零不是正数。",
+        "verified": true
+      },
+      {
+        "input": "3\n-3 -2 -1\n",
+        "output": "0\n",
+        "visibility": "hidden",
+        "purpose": "全部为负数",
+        "output_basis": "没有正数。",
+        "verified": true
+      },
+      {
+        "input": "2\n1 100\n",
+        "output": "2\n",
+        "visibility": "hidden",
+        "purpose": "全部为正数",
+        "output_basis": "两个整数均大于零。",
+        "verified": true
+      }
+    ]
+  }
+]

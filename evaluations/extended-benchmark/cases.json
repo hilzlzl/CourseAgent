@@ -1,0 +1,261 @@
+[
+  {
+    "id": "stack-A",
+    "topic": "栈和队列",
+    "prompt_for_local_reproduction": "给数据结构课程布置一次关于栈和队列的作业，包含 8 道编程题。面向已学完本章基础知识的大二学生，难度以基础和中等为主。整套作业应覆盖：栈与队列的基本操作和边界处理、操作序列分析、利用栈或队列解决实际问题。不同题目可以分别考查不同目标，不要求每道题同时包含所有知识点，避免大量题目重复同一种考法。编程题采用标准输入输出，提供公开样例与非公开评测用例。仅在本地生成并导出，不操作平台。",
+    "counts": {},
+    "programming_count": 8,
+    "requires_private_attachment": false,
+    "attachment_distributed": false,
+    "assessment_goals": "栈与队列的基本操作和边界处理、操作序列分析、利用栈或队列解决实际问题",
+    "cohort": "historical"
+  },
+  {
+    "id": "stack-B",
+    "topic": "栈和队列",
+    "prompt_for_local_reproduction": "给数据结构课程布置一次关于栈和队列的作业，包含 8 道单选题、6 道判断题和 6 道编程题。面向已学完本章基础知识的大二学生，难度以基础和中等为主。整套作业应覆盖：栈与队列的基本操作和边界处理、操作序列分析、利用栈或队列解决实际问题。不同题目可以分别考查不同目标，不要求每道题同时包含所有知识点，避免大量题目重复同一种考法。编程题采用标准输入输出，提供公开样例与非公开评测用例。仅在本地生成并导出，不操作平台。",
+    "counts": {
+      "1": 8,
+      "3": 6
+    },
+    "programming_count": 6,
+    "requires_private_attachment": false,
+    "attachment_distributed": false,
+    "assessment_goals": "栈与队列的基本操作和边界处理、操作序列分析、利用栈或队列解决实际问题",
+    "cohort": "historical"
+  },
+  {
+    "id": "stack-C",
+    "topic": "栈和队列",
+    "prompt_for_local_reproduction": "给数据结构课程布置一次关于栈和队列的作业，包含 6 道单选题、4 道判断题和 6 道编程题。面向已学完本章基础知识的大二学生，难度以基础和中等为主。整套作业应覆盖：栈与队列的基本操作和边界处理、操作序列分析、利用栈或队列解决实际问题。不同题目可以分别考查不同目标，不要求每道题同时包含所有知识点，避免大量题目重复同一种考法。编程题采用标准输入输出，提供公开样例与非公开评测用例。仅在本地生成并导出，不操作平台。以本次附件《教师自备课件.pdf》中已经讲授的知识为考查范围，避免引入尚未讲授的算法；不把课件未要求的拓展内容作为必考目标。",
+    "counts": {
+      "1": 6,
+      "3": 4
+    },
+    "programming_count": 6,
+    "requires_private_attachment": true,
+    "attachment_distributed": false,
+    "assessment_goals": "栈与队列的基本操作和边界处理、操作序列分析、利用栈或队列解决实际问题",
+    "cohort": "historical"
+  },
+  {
+    "id": "sort-A",
+    "topic": "排序算法",
+    "prompt_for_local_reproduction": "给数据结构课程布置一次关于排序算法的作业，包含 8 道编程题。面向已学完本章基础知识的大二学生，难度以基础和中等为主。整套作业应覆盖：基本排序方法、排序过程与稳定性、时间与空间复杂度、排序在实际问题中的应用。不同题目可以分别考查不同目标，不要求每道题同时包含所有知识点，避免大量题目重复同一种考法。编程题采用标准输入输出，提供公开样例与非公开评测用例。仅在本地生成并导出，不操作平台。",
+    "counts": {},
+    "programming_count": 8,
+    "requires_private_attachment": false,
+    "attachment_distributed": false,
+    "assessment_goals": "基本排序方法、排序过程与稳定性、时间与空间复杂度、排序在实际问题中的应用",
+    "cohort": "historical"
+  },
+  {
+    "id": "sort-B",
+    "topic": "排序算法",
+    "prompt_for_local_reproduction": "给数据结构课程布置一次关于排序算法的作业，包含 8 道单选题、6 道判断题和 6 道编程题。面向已学完本章基础知识的大二学生，难度以基础和中等为主。整套作业应覆盖：基本排序方法、排序过程与稳定性、时间与空间复杂度、排序在实际问题中的应用。不同题目可以分别考查不同目标，不要求每道题同时包含所有知识点，避免大量题目重复同一种考法。编程题采用标准输入输出，提供公开样例与非公开评测用例。仅在本地生成并导出，不操作平台。",
+    "counts": {
+      "1": 8,
+      "3": 6
+    },
+    "programming_count": 6,
+    "requires_private_attachment": false,
+    "attachment_distributed": false,
+    "assessment_goals": "基本排序方法、排序过程与稳定性、时间与空间复杂度、排序在实际问题中的应用",
+    "cohort": "historical"
+  },
+  {
+    "id": "sort-C",
+    "topic": "排序算法",
+    "prompt_for_local_reproduction": "给数据结构课程布置一次关于排序算法的作业，包含 6 道单选题、4 道判断题和 6 道编程题。面向已学完本章基础知识的大二学生，难度以基础和中等为主。整套作业应覆盖：基本排序方法、排序过程与稳定性、时间与空间复杂度、排序在实际问题中的应用。不同题目可以分别考查不同目标，不要求每道题同时包含所有知识点，避免大量题目重复同一种考法。编程题采用标准输入输出，提供公开样例与非公开评测用例。仅在本地生成并导出，不操作平台。以本次附件《教师自备课件.pdf》中已经讲授的知识为考查范围，避免引入尚未讲授的算法；不把课件未要求的拓展内容作为必考目标。",
+    "counts": {
+      "1": 6,
+      "3": 4
+    },
+    "programming_count": 6,
+    "requires_private_attachment": true,
+    "attachment_distributed": false,
+    "assessment_goals": "基本排序方法、排序过程与稳定性、时间与空间复杂度、排序在实际问题中的应用",
+    "cohort": "historical"
+  },
+  {
+    "id": "search-A",
+    "topic": "查找与哈希",
+    "prompt_for_local_reproduction": "给数据结构课程布置一次关于查找与哈希的作业，包含 8 道编程题。面向已学完本章基础知识的大二学生，难度以基础和中等为主。整套作业应覆盖：顺序查找与折半查找、查找效率、哈希查找与冲突处理，以及查找方法的实际应用。不同题目可以分别考查不同目标，不要求每道题同时包含所有知识点，避免大量题目重复同一种考法。编程题采用标准输入输出，提供公开样例与非公开评测用例。仅在本地生成并导出，不操作平台。",
+    "counts": {},
+    "programming_count": 8,
+    "requires_private_attachment": false,
+    "attachment_distributed": false,
+    "assessment_goals": "顺序查找与折半查找、查找效率、哈希查找与冲突处理，以及查找方法的实际应用",
+    "cohort": "historical"
+  },
+  {
+    "id": "search-B",
+    "topic": "查找与哈希",
+    "prompt_for_local_reproduction": "给数据结构课程布置一次关于查找与哈希的作业，包含 8 道单选题、6 道判断题和 6 道编程题。面向已学完本章基础知识的大二学生，难度以基础和中等为主。整套作业应覆盖：顺序查找与折半查找、查找效率、哈希查找与冲突处理，以及查找方法的实际应用。不同题目可以分别考查不同目标，不要求每道题同时包含所有知识点，避免大量题目重复同一种考法。编程题采用标准输入输出，提供公开样例与非公开评测用例。仅在本地生成并导出，不操作平台。",
+    "counts": {
+      "1": 8,
+      "3": 6
+    },
+    "programming_count": 6,
+    "requires_private_attachment": false,
+    "attachment_distributed": false,
+    "assessment_goals": "顺序查找与折半查找、查找效率、哈希查找与冲突处理，以及查找方法的实际应用",
+    "cohort": "historical"
+  },
+  {
+    "id": "search-C",
+    "topic": "查找与哈希",
+    "prompt_for_local_reproduction": "给数据结构课程布置一次关于查找与哈希的作业，包含 6 道单选题、4 道判断题和 6 道编程题。面向已学完本章基础知识的大二学生，难度以基础和中等为主。整套作业应覆盖：顺序查找与折半查找、查找效率、哈希查找与冲突处理，以及查找方法的实际应用。不同题目可以分别考查不同目标，不要求每道题同时包含所有知识点，避免大量题目重复同一种考法。编程题采用标准输入输出，提供公开样例与非公开评测用例。仅在本地生成并导出，不操作平台。以本次附件《教师自备课件.pdf》中已经讲授的知识为考查范围，避免引入尚未讲授的算法；不把课件未要求的拓展内容作为必考目标。",
+    "counts": {
+      "1": 6,
+      "3": 4
+    },
+    "programming_count": 6,
+    "requires_private_attachment": true,
+    "attachment_distributed": false,
+    "assessment_goals": "顺序查找与折半查找、查找效率、哈希查找与冲突处理，以及查找方法的实际应用",
+    "cohort": "historical"
+  },
+  {
+    "id": "tree-A",
+    "topic": "二叉树",
+    "prompt_for_local_reproduction": "给数据结构课程布置一次关于二叉树的作业，包含 8 道编程题。面向已学完本章基础知识的大二学生，难度以基础和中等为主。整套作业应覆盖：二叉树的基本性质、先序中序后序与层序遍历、利用遍历序列构造二叉树以及二叉树的实际应用。不同题目可以分别考查不同目标，不要求每道题同时包含所有知识点，避免大量题目重复同一种考法。编程题采用标准输入输出，提供公开样例与非公开评测用例。仅在本地生成并导出，不操作平台。",
+    "counts": {},
+    "programming_count": 8,
+    "requires_private_attachment": false,
+    "attachment_distributed": false,
+    "assessment_goals": "二叉树的基本性质、先序中序后序与层序遍历、利用遍历序列构造二叉树以及二叉树的实际应用",
+    "cohort": "historical"
+  },
+  {
+    "id": "tree-B",
+    "topic": "二叉树",
+    "prompt_for_local_reproduction": "给数据结构课程布置一次关于二叉树的作业，包含 8 道单选题、6 道判断题和 6 道编程题。面向已学完本章基础知识的大二学生，难度以基础和中等为主。整套作业应覆盖：二叉树的基本性质、先序中序后序与层序遍历、利用遍历序列构造二叉树以及二叉树的实际应用。不同题目可以分别考查不同目标，不要求每道题同时包含所有知识点，避免大量题目重复同一种考法。编程题采用标准输入输出，提供公开样例与非公开评测用例。仅在本地生成并导出，不操作平台。",
+    "counts": {
+      "1": 8,
+      "3": 6
+    },
+    "programming_count": 6,
+    "requires_private_attachment": false,
+    "attachment_distributed": false,
+    "assessment_goals": "二叉树的基本性质、先序中序后序与层序遍历、利用遍历序列构造二叉树以及二叉树的实际应用",
+    "cohort": "historical"
+  },
+  {
+    "id": "tree-C",
+    "topic": "二叉树",
+    "prompt_for_local_reproduction": "给数据结构课程布置一次关于二叉树的作业，包含 6 道单选题、4 道判断题和 6 道编程题。面向已学完本章基础知识的大二学生，难度以基础和中等为主。整套作业应覆盖：二叉树的基本性质、先序中序后序与层序遍历、利用遍历序列构造二叉树以及二叉树的实际应用。不同题目可以分别考查不同目标，不要求每道题同时包含所有知识点，避免大量题目重复同一种考法。编程题采用标准输入输出，提供公开样例与非公开评测用例。仅在本地生成并导出，不操作平台。以本次附件《教师自备课件.pdf》中已经讲授的知识为考查范围，避免引入尚未讲授的算法；不把课件未要求的拓展内容作为必考目标。",
+    "counts": {
+      "1": 6,
+      "3": 4
+    },
+    "programming_count": 6,
+    "requires_private_attachment": true,
+    "attachment_distributed": false,
+    "assessment_goals": "二叉树的基本性质、先序中序后序与层序遍历、利用遍历序列构造二叉树以及二叉树的实际应用",
+    "cohort": "historical"
+  },
+  {
+    "id": "list-A",
+    "topic": "线性表",
+    "counts": {},
+    "programming_count": 8,
+    "assessment_goals": "顺序表与链表的存储和基本操作、边界处理与复杂度分析、利用线性表解决实际问题",
+    "prompt_for_local_reproduction": "给数据结构课程布置一次关于线性表的作业，包含 8 道编程题。面向已学完本章基础知识的大二学生，难度以基础和中等为主。整套作业应覆盖：顺序表与链表的存储和基本操作、边界处理与复杂度分析、利用线性表解决实际问题。不同题目可以分别考查不同目标，不要求每道题同时包含所有知识点，避免大量题目重复同一种考法。编程题采用标准输入输出，提供公开样例与非公开评测用例。仅在本地生成并导出，不操作平台。",
+    "requires_private_attachment": false,
+    "attachment_distributed": false,
+    "cohort": "extension"
+  },
+  {
+    "id": "list-B",
+    "topic": "线性表",
+    "counts": {
+      "1": 8,
+      "3": 6
+    },
+    "programming_count": 6,
+    "assessment_goals": "顺序表与链表的存储和基本操作、边界处理与复杂度分析、利用线性表解决实际问题",
+    "prompt_for_local_reproduction": "给数据结构课程布置一次关于线性表的作业，包含 8 道单选题、6 道判断题和 6 道编程题。面向已学完本章基础知识的大二学生，难度以基础和中等为主。整套作业应覆盖：顺序表与链表的存储和基本操作、边界处理与复杂度分析、利用线性表解决实际问题。不同题目可以分别考查不同目标，不要求每道题同时包含所有知识点，避免大量题目重复同一种考法。编程题采用标准输入输出，提供公开样例与非公开评测用例。仅在本地生成并导出，不操作平台。",
+    "requires_private_attachment": false,
+    "attachment_distributed": false,
+    "cohort": "extension"
+  },
+  {
+    "id": "list-C",
+    "topic": "线性表",
+    "counts": {
+      "1": 6,
+      "3": 4
+    },
+    "programming_count": 6,
+    "assessment_goals": "顺序表与链表的存储和基本操作、边界处理与复杂度分析、利用线性表解决实际问题",
+    "prompt_for_local_reproduction": "给数据结构课程布置一次关于线性表的作业，包含 6 道单选题、4 道判断题和 6 道编程题。面向已学完本章基础知识的大二学生，难度以基础和中等为主。整套作业应覆盖：顺序表与链表的存储和基本操作、边界处理与复杂度分析、利用线性表解决实际问题。不同题目可以分别考查不同目标，不要求每道题同时包含所有知识点，避免大量题目重复同一种考法。编程题采用标准输入输出，提供公开样例与非公开评测用例。仅在本地生成并导出，不操作平台。以本次附件《教师自备课件.pdf》中已经讲授的知识为考查范围，避免引入尚未讲授的算法；不把课件未要求的拓展内容作为必考目标。",
+    "requires_private_attachment": true,
+    "attachment_distributed": false,
+    "cohort": "extension"
+  },
+  {
+    "id": "string-A",
+    "topic": "串、数组和广义表",
+    "counts": {},
+    "programming_count": 8,
+    "assessment_goals": "串的基本操作与模式匹配、数组存储和下标映射、广义表的基本概念与操作；编程题侧重串和数组，概念题可考查广义表",
+    "prompt_for_local_reproduction": "给数据结构课程布置一次关于串、数组和广义表的作业，包含 8 道编程题。面向已学完本章基础知识的大二学生，难度以基础和中等为主。整套作业应覆盖：串的基本操作与模式匹配、数组存储和下标映射、广义表的基本概念与操作；编程题侧重串和数组，概念题可考查广义表。不同题目可以分别考查不同目标，不要求每道题同时包含所有知识点，避免大量题目重复同一种考法。编程题采用标准输入输出，提供公开样例与非公开评测用例。仅在本地生成并导出，不操作平台。",
+    "requires_private_attachment": false,
+    "attachment_distributed": false,
+    "cohort": "extension"
+  },
+  {
+    "id": "string-B",
+    "topic": "串、数组和广义表",
+    "counts": {
+      "1": 8,
+      "3": 6
+    },
+    "programming_count": 6,
+    "assessment_goals": "串的基本操作与模式匹配、数组存储和下标映射、广义表的基本概念与操作；编程题侧重串和数组，概念题可考查广义表",
+    "prompt_for_local_reproduction": "给数据结构课程布置一次关于串、数组和广义表的作业，包含 8 道单选题、6 道判断题和 6 道编程题。面向已学完本章基础知识的大二学生，难度以基础和中等为主。整套作业应覆盖：串的基本操作与模式匹配、数组存储和下标映射、广义表的基本概念与操作；编程题侧重串和数组，概念题可考查广义表。不同题目可以分别考查不同目标，不要求每道题同时包含所有知识点，避免大量题目重复同一种考法。编程题采用标准输入输出，提供公开样例与非公开评测用例。仅在本地生成并导出，不操作平台。",
+    "requires_private_attachment": false,
+    "attachment_distributed": false,
+    "cohort": "extension"
+  },
+  {
+    "id": "string-C",
+    "topic": "串、数组和广义表",
+    "counts": {
+      "1": 6,
+      "3": 4
+    },
+    "programming_count": 6,
+    "assessment_goals": "串的基本操作与模式匹配、数组存储和下标映射、广义表的基本概念与操作；编程题侧重串和数组，概念题可考查广义表",
+    "prompt_for_local_reproduction": "给数据结构课程布置一次关于串、数组和广义表的作业，包含 6 道单选题、4 道判断题和 6 道编程题。面向已学完本章基础知识的大二学生，难度以基础和中等为主。整套作业应覆盖：串的基本操作与模式匹配、数组存储和下标映射、广义表的基本概念与操作；编程题侧重串和数组，概念题可考查广义表。不同题目可以分别考查不同目标，不要求每道题同时包含所有知识点，避免大量题目重复同一种考法。编程题采用标准输入输出，提供公开样例与非公开评测用例。仅在本地生成并导出，不操作平台。以本次附件《教师自备课件.pdf》中已经讲授的知识为考查范围，避免引入尚未讲授的算法；不把课件未要求的拓展内容作为必考目标。",
+    "requires_private_attachment": true,
+    "attachment_distributed": false,
+    "cohort": "extension"
+  },
+  {
+    "id": "graph-A",
+    "topic": "图",
+    "counts": {},
+    "programming_count": 8,
+    "assessment_goals": "图的存储与深度优先和广度优先遍历、连通性、基本路径与生成树问题；以已学基础算法为主",
+    "prompt_for_local_reproduction": "给数据结构课程布置一次关于图的作业，包含 8 道编程题。面向已学完本章基础知识的大二学生，难度以基础和中等为主。整套作业应覆盖：图的存储与深度优先和广度优先遍历、连通性、基本路径与生成树问题；以已学基础算法为主。不同题目可以分别考查不同目标，不要求每道题同时包含所有知识点，避免大量题目重复同一种考法。编程题采用标准输入输出，提供公开样例与非公开评测用例。仅在本地生成并导出，不操作平台。",
+    "requires_private_attachment": false,
+    "attachment_distributed": false,
+    "cohort": "extension"
+  },
+  {
+    "id": "graph-B",
+    "topic": "图",
+    "counts": {
+      "1": 8,
+      "3": 6
+    },
+    "programming_count": 6,
+    "assessment_goals": "图的存储与深度优先和广度优先遍历、连通性、基本路径与生成树问题；以已学基础算法为主",
+    "prompt_for_local_reproduction": "给数据结构课程布置一次关于图的作业，包含 8 道单选题、6 道判断题和 6 道编程题。面向已学完本章基础知识的大二学生，难度以基础和中等为主。整套作业应覆盖：图的存储与深度优先和广度优先遍历、连通性、基本路径与生成树问题；以已学基础算法为主。不同题目可以分别考查不同目标，不要求每道题同时包含所有知识点，避免大量题目重复同一种考法。编程题采用标准输入输出，提供公开样例与非公开评测用例。仅在本地生成并导出，不操作平台。",
+    "requires_private_attachment": false,
+    "attachment_distributed": false,
+    "cohort": "extension"
+  }
+]

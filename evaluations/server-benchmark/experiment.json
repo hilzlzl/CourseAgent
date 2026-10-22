@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "experiment_id": "server-three-group-20x3",
+  "execution_state": "completed_reported_by_owner",
+  "result_state": "author_reported_aggregates",
+  "expected_cases": 20,
+  "repetitions_per_case": 3,
+  "expected_runs": 180,
+  "expected_question_occurrences": 2880,
+  "historical_36_runs_included": false,
+  "batch_relationship_to_historical_36": null,
+  "groups": [
+    "courseagent",
+    "openai_api",
+    "human"
+  ],
+  "local_export_only": null,
+  "started_at": null,
+  "finished_at": null,
+  "source_commit": null,
+  "source_archive_sha256": null,
+  "model_provider": null,
+  "model_requested": null,
+  "model_returned": null,
+  "temperature": null,
+  "reasoning_effort": null,
+  "per_request_token_limit": null,
+  "logical_call_budget": null,
+  "task_deadline_seconds": null,
+  "max_concurrency": null,
+  "server_os": null,
+  "python_version": null,
+  "cpu": null,
+  "memory_gib": null,
+  "sandbox_available": null,
+  "retrieval_mode": null,
+  "cache_initial_state": null,
+  "history_initial_state": null,
+  "execution_order": null,
+  "notes": "Twenty requirements, three repetitions per group, 60 runs and 960 requested question occurrences per group (519 ordinary, 441 programming). The owner confirmed the latest aggregates as measurements, including approximate usage and human-group values. OpenAI is direct API without retrieval/execution tools; scripts are executed externally. HTTP requests are reported as approximately 60, not inferred from zero follow-ups. Complete-assignment success, script execution, acceptance and review samples are separate outcomes; see docs/evaluation.md.",
+  "expected_runs_per_group": 60,
+  "group_settings": {
+    "courseagent": {
+      "source_commit": null,
+      "source_archive_sha256": null,
+      "model": null,
+      "tools": null,
+      "budget": null,
+      "cache_initial_state": null,
+      "history_initial_state": null
+    },
+    "openai_api": {
+      "product": "OpenAI API",
+      "product_version": null,
+      "model": null,
+      "tools": [],
+      "budget": null,
+      "session_policy": null,
+      "method": "direct_api",
+      "output_execution": "external_after_response",
+      "follow_up_messages": 0
+    },
+    "human": {
+      "participants": null,
+      "expertise": null,
+      "allowed_tools": null,
+      "ai_assistance_allowed": false,
+      "time_limit_minutes": null,
+      "repeat_assignment_policy": null,
+      "teacher_sample_blind_review_reported": true
+    }
+  },
+  "expected_question_occurrences_per_group": 960,
+  "expected_question_occurrences_all_groups": 2880,
+  "question_count_mean_per_requirement": 16,
+  "question_counts_per_group": {
+    "ordinary": 519,
+    "programming": 441,
+    "total": 960
+  },
+  "programming_cases_mean": {
+    "public": 2,
+    "hidden": 15
+  },
+  "programming_cases_derived_per_group": {
+    "public": 882,
+    "hidden": 6615,
+    "total": 7497
+  }
+}

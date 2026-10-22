@@ -1,0 +1,10 @@
+include LICENSE THIRD_PARTY_NOTICES.md CONTRIBUTING.md SECURITY.md
+include README.md README.en.md pyproject.toml requirements*.txt
+include package.json package-lock.json model-config.example.json start.sh start.cmd
+graft src
+graft tests
+graft scripts
+graft docs
+graft examples
+graft evaluations
+global-exclude __pycache__ *.py[cod] *.local.json *.egg-info

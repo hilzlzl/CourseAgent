@@ -1,0 +1,25 @@
+{
+  "runs": 3,
+  "independent_general_agent_runs": 0,
+  "ordinary_questions": 24,
+  "programming_questions": 20,
+  "questions": 44,
+  "public_cases": 46,
+  "hidden_cases": 263,
+  "total_cases": 309,
+  "machine_complete": 3,
+  "delivery_requirements_met": 0,
+  "median_export_seconds": 964.0877451896667,
+  "logical_model_calls": 197,
+  "reported_tokens": 582042,
+  "manual_resumes": 0,
+  "empty_explicit_explanation_fields": 30,
+  "finite_oracle_comparisons": {
+    "passed": 70,
+    "flagged": 0,
+    "unassessed": 239
+  },
+  "supports_workflow_feasibility_on_observed_cases": true,
+  "supports_general_agent_superiority": false,
+  "supports_teacher_time_savings": false
+}

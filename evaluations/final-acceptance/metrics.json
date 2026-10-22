@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "scope": "historical_developer_local_acceptance",
+  "evaluation_date": "2026-10-19",
+  "model_settings": {
+    "default": {
+      "model": "gpt-6.1-sol",
+      "backend": "langchain",
+      "json_mode": false,
+      "streaming": true,
+      "timeout_seconds": 120,
+      "max_output_tokens": 16384,
+      "token_parameter": "max_completion_tokens",
+      "reasoning_effort": "low"
+    },
+    "roles": {}
+  },
+  "runs": 36,
+  "complete_assignments": 35,
+  "unassisted_within_deadline": 34,
+  "ordinary_questions": 288,
+  "programming_questions": 234,
+  "planned_questions": 528,
+  "test_cases": 3704,
+  "public_cases": 541,
+  "hidden_cases": 3163,
+  "finite_oracle_passed": 1389,
+  "finite_oracle_unassessed": 2315,
+  "finite_oracle_flagged": 0,
+  "logical_model_calls": 1862,
+  "reported_tokens": 4948653,
+  "spans_missing_token_usage": 5,
+  "actual_cost": null,
+  "independent_teacher_score": null,
+  "macro_request_repeat_rate": {
+    "ordinary": 0.5869047619047619,
+    "programming": 0.5347222222222222
+  },
+  "latency_population": "34 unassisted local completions",
+  "latency_p50_seconds": 505.4150607585907,
+  "latency_p90_seconds": 842.9550290107727,
+  "source_sha256": {
+    "summary.json": "e60c121f37dc2cb74e4810acca2346265b7d854e0aaf868d085667f07d9734f6",
+    "closing-summary.json": "243c363916c2494c77d35d347a5fa08f3127fb7063072f02a7062fc8279055ee",
+    "closing-independent-evidence.json": "fa3229b0bb0a95a06c85f96c28319e3a310493f7b715f20fe7b49b43d0681619",
+    "key-metrics.json": "6c2b39523fd4e2caa4220bfe1dae7e14b0c96a45b6047279c20b60ab2a640f0c",
+    "plan.json": "03ed62561bd6a33a28beccb6d2d7d5e1809d3edff33649895e5a94ed72bcbc5a"
+  },
+  "follow_up": {
+    "scope": "one separate targeted run after candidate fallback fix; warm production cache retained",
+    "ordinary_count": 14,
+    "programming_count": 6,
+    "test_cases": 96,
+    "logical_model_calls": 90,
+    "elapsed_seconds": 725,
+    "complete": true,
+    "platform_writes": 0
+  },
+  "limitations": [
+    "Private course attachments and raw task outputs are intentionally not distributed.",
+    "The sanitized table allows arithmetic verification, not independent verification of the raw content.",
+    "Partial fixed-oracle comparisons are not proof of full-input correctness or mutation detection strength.",
+    "Historical runs are not a cache-free, provider-neutral benchmark of the current public commit.",
+    "No fresh platform upload was performed for this release."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "repository": "https://github.com/langchain-ai/open_deep_research",
+  "revision": "1b7d2e80db9faa586165c60e09096dbbfd483a64",
+  "files": {
+    "LICENSE": {
+      "source": "LICENSE",
+      "sha256": "3404cb66935968edefe1149c9bfcb44bd8532c437c01ac095ec53b6e195ce110"
+    },
+    "upstream/deep_researcher.py": {
+      "source": "src/open_deep_research/deep_researcher.py",
+      "sha256": "af128d5d8773008d021b6ef7562e9fb90a45f7eb5e886483d1e6e835223275e0"
+    },
+    "upstream/state.py": {
+      "source": "src/open_deep_research/state.py",
+      "sha256": "7a03f4a1d5132573ed306d403fd3478fe8916d955f3caa44a8d365877ac35d0e"
+    }
+  }
+}

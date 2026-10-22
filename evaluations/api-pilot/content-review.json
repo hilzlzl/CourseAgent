@@ -1,0 +1,1022 @@
+{
+  "format": "courseagent-assistant-content-review-v1",
+  "reviewed_at": "2026-10-20",
+  "arm": "CourseAgent_workflow_with_model_API",
+  "requested_model": "gpt-6.1-sol",
+  "review_status": "retrospective_assistant_review_not_independent_acceptance",
+  "rubric": {
+    "question_weights": {
+      "scope": 30,
+      "correctness": 30,
+      "completeness": 15,
+      "suitability": 15
+    },
+    "assignment_coverage_weight": 10,
+    "labels": {
+      "0": "实质不合格",
+      "1": "需修改或证据不足（历史助手初评约定）",
+      "2": "本次助手复核未见需改点或有限程序证据支持"
+    },
+    "mixed_task_weighting": "ordinary_and_programming_equal_50_percent_each",
+    "pure_programming_weighting": "programming_100_percent",
+    "score_scope": "题目内容初评；完整参考程序、解析和样例交付另设硬门槛，不能被内容均分抵消。",
+    "normative_difference": "testing-scorecard要求未知标未评估、不生成完整质量总分；历史助手初评却把编程证据不足记1。本文件仅复用历史参考分以追溯90.7口径，严格质量总分保持null。"
+  },
+  "evidence_policy": "只使用本次保存的逐次核验记录；不把同一题历史运行的正确性标签搬到本次。",
+  "reviewed_questions": 44,
+  "historical_content_matches": 37,
+  "new_content_labels": 7,
+  "independent_general_agent_runs": 0,
+  "source_evidence_sha256": {
+    "historical_review": "c381f7abe0386260619adf290f65b2c1fc7e3e570e536144816ce39964a75a63",
+    "historical_scorer": "325c9fd9bdee54da00241a46323f8333121e8c6c2cde40865afa7c4532720497",
+    "normative_rubric": "026d875b7df8dd9530fe222190b286d285953e9ff7e2bf2539de53fb97d6bb0b",
+    "stack-A-P1_questions": "67ecfbd6c42ea706a8603bea22678d8a78c0a4cc9e47921ecec3ca0d7fc6264a",
+    "sort-B-P1_questions": "9d9525070e7e2c927fe613a86b98efe5bf423c795293750454a55db3ab0226bc",
+    "tree-C-P1_questions": "c3f41880cebec506398992067fe7aa74e976ae6b9ebcd68dae1ab67a4b48148b"
+  },
+  "questions": [
+    {
+      "run_id": "stack-A-P1",
+      "kind": "programming",
+      "ordinal": 1,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 13,
+        "finite_oracle": {
+          "passed": 13,
+          "flagged": 0,
+          "unassessed": 0
+        },
+        "independent_all_saved_cases_agree": true,
+        "correctness_note": "仅有限保存用例的输出一致，不是全域证明；无独立核对按历史助手规则记1，不能当作部分正确率。"
+      }
+    },
+    {
+      "run_id": "stack-A-P1",
+      "kind": "programming",
+      "ordinal": 2,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 18,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 18
+        },
+        "independent_all_saved_cases_agree": false,
+        "correctness_note": "仅有限保存用例的输出一致，不是全域证明；无独立核对按历史助手规则记1，不能当作部分正确率。"
+      }
+    },
+    {
+      "run_id": "stack-A-P1",
+      "kind": "programming",
+      "ordinal": 3,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 16,
+        "finite_oracle": {
+          "passed": 16,
+          "flagged": 0,
+          "unassessed": 0
+        },
+        "independent_all_saved_cases_agree": true,
+        "correctness_note": "仅有限保存用例的输出一致，不是全域证明；无独立核对按历史助手规则记1，不能当作部分正确率。"
+      }
+    },
+    {
+      "run_id": "stack-A-P1",
+      "kind": "programming",
+      "ordinal": 4,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 14,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 14
+        },
+        "independent_all_saved_cases_agree": false,
+        "correctness_note": "仅有限保存用例的输出一致，不是全域证明；无独立核对按历史助手规则记1，不能当作部分正确率。"
+      }
+    },
+    {
+      "run_id": "stack-A-P1",
+      "kind": "programming",
+      "ordinal": 5,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 12,
+        "finite_oracle": {
+          "passed": 12,
+          "flagged": 0,
+          "unassessed": 0
+        },
+        "independent_all_saved_cases_agree": true,
+        "correctness_note": "仅有限保存用例的输出一致，不是全域证明；无独立核对按历史助手规则记1，不能当作部分正确率。"
+      }
+    },
+    {
+      "run_id": "stack-A-P1",
+      "kind": "programming",
+      "ordinal": 6,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 12,
+        "finite_oracle": {
+          "passed": 12,
+          "flagged": 0,
+          "unassessed": 0
+        },
+        "independent_all_saved_cases_agree": true,
+        "correctness_note": "仅有限保存用例的输出一致，不是全域证明；无独立核对按历史助手规则记1，不能当作部分正确率。"
+      }
+    },
+    {
+      "run_id": "stack-A-P1",
+      "kind": "programming",
+      "ordinal": 7,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 1
+      },
+      "reasons": [
+        "括号和一元负号的表达式解析，需确认学生先修。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 19,
+        "finite_oracle": {
+          "passed": 17,
+          "flagged": 0,
+          "unassessed": 2
+        },
+        "independent_all_saved_cases_agree": false,
+        "correctness_note": "仅有限保存用例的输出一致，不是全域证明；无独立核对按历史助手规则记1，不能当作部分正确率。"
+      }
+    },
+    {
+      "run_id": "stack-A-P1",
+      "kind": "programming",
+      "ordinal": 8,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 16,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 16
+        },
+        "independent_all_saved_cases_agree": false,
+        "correctness_note": "仅有限保存用例的输出一致，不是全域证明；无独立核对按历史助手规则记1，不能当作部分正确率。"
+      }
+    },
+    {
+      "run_id": "sort-B-P1",
+      "kind": "ordinary",
+      "ordinal": 1,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-P1",
+      "kind": "ordinary",
+      "ordinal": 2,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-P1",
+      "kind": "ordinary",
+      "ordinal": 3,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-P1",
+      "kind": "ordinary",
+      "ordinal": 4,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-P1",
+      "kind": "ordinary",
+      "ordinal": 5,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-P1",
+      "kind": "ordinary",
+      "ordinal": 6,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "常规二分插入排序把相等关键字插在已有相等项之后时稳定，其余三个常规实现不稳定；沿用教材默认实现。"
+      ],
+      "content_label_basis": "new_assistant_reading",
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-P1",
+      "kind": "ordinary",
+      "ordinal": 7,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-P1",
+      "kind": "ordinary",
+      "ordinal": 8,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-P1",
+      "kind": "ordinary",
+      "ordinal": 9,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 1,
+        "suitability": 1
+      },
+      "reasons": [
+        "把大记录的移动成本与渐近时间复杂度混用，主要因素的表述需说明成本模型。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-P1",
+      "kind": "ordinary",
+      "ordinal": 10,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-P1",
+      "kind": "ordinary",
+      "ordinal": 11,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-P1",
+      "kind": "ordinary",
+      "ordinal": 12,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-P1",
+      "kind": "ordinary",
+      "ordinal": 13,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-P1",
+      "kind": "ordinary",
+      "ordinal": 14,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "sort-B-P1",
+      "kind": "programming",
+      "ordinal": 1,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 16,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 16
+        },
+        "independent_all_saved_cases_agree": false,
+        "correctness_note": "仅有限保存用例的输出一致，不是全域证明；无独立核对按历史助手规则记1，不能当作部分正确率。"
+      }
+    },
+    {
+      "run_id": "sort-B-P1",
+      "kind": "programming",
+      "ordinal": 2,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 16,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 16
+        },
+        "independent_all_saved_cases_agree": false,
+        "correctness_note": "仅有限保存用例的输出一致，不是全域证明；无独立核对按历史助手规则记1，不能当作部分正确率。"
+      }
+    },
+    {
+      "run_id": "sort-B-P1",
+      "kind": "programming",
+      "ordinal": 3,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 14,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 14
+        },
+        "independent_all_saved_cases_agree": false,
+        "correctness_note": "仅有限保存用例的输出一致，不是全域证明；无独立核对按历史助手规则记1，不能当作部分正确率。"
+      }
+    },
+    {
+      "run_id": "sort-B-P1",
+      "kind": "programming",
+      "ordinal": 4,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 15,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 15
+        },
+        "independent_all_saved_cases_agree": false,
+        "correctness_note": "仅有限保存用例的输出一致，不是全域证明；无独立核对按历史助手规则记1，不能当作部分正确率。"
+      }
+    },
+    {
+      "run_id": "sort-B-P1",
+      "kind": "programming",
+      "ordinal": 5,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 14,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 14
+        },
+        "independent_all_saved_cases_agree": false,
+        "correctness_note": "仅有限保存用例的输出一致，不是全域证明；无独立核对按历史助手规则记1，不能当作部分正确率。"
+      }
+    },
+    {
+      "run_id": "sort-B-P1",
+      "kind": "programming",
+      "ordinal": 6,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 1,
+        "suitability": 2
+      },
+      "reasons": [
+        "每个固定宽度区间仍重复输入输出长度2；合法可用，但录入负担偏高。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 16,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 16
+        },
+        "independent_all_saved_cases_agree": false,
+        "correctness_note": "仅有限保存用例的输出一致，不是全域证明；无独立核对按历史助手规则记1，不能当作部分正确率。"
+      }
+    },
+    {
+      "run_id": "tree-C-P1",
+      "kind": "ordinary",
+      "ordinal": 1,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "完全二叉树H为D的左孩子，前序为ABDHECFG，核对选项A。"
+      ],
+      "content_label_basis": "new_assistant_reading",
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "tree-C-P1",
+      "kind": "ordinary",
+      "ordinal": 2,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "由后序根a划分，右子树根c、左右孩子d和e；前序abcde，核对选项D。"
+      ],
+      "content_label_basis": "new_assistant_reading",
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "tree-C-P1",
+      "kind": "ordinary",
+      "ordinal": 3,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "tree-C-P1",
+      "kind": "ordinary",
+      "ordinal": 4,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "tree-C-P1",
+      "kind": "ordinary",
+      "ordinal": 5,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "tree-C-P1",
+      "kind": "ordinary",
+      "ordinal": 6,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "tree-C-P1",
+      "kind": "ordinary",
+      "ordinal": 7,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "反例：根2、左1、右3，后序1,3,2不递增，判错成立。"
+      ],
+      "content_label_basis": "new_assistant_reading",
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "tree-C-P1",
+      "kind": "ordinary",
+      "ordinal": 8,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "二叉查找树中序遍历单调有序，教材定义下判对成立。"
+      ],
+      "content_label_basis": "new_assistant_reading",
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "tree-C-P1",
+      "kind": "ordinary",
+      "ordinal": 9,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 1,
+        "suitability": 2
+      },
+      "reasons": [
+        "原句把两类遍历重复写成深度优先，判错成立；需改清明显重复文字，避免只考查病句。"
+      ],
+      "content_label_basis": "new_assistant_reading",
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "tree-C-P1",
+      "kind": "ordinary",
+      "ordinal": 10,
+      "scores": {
+        "scope": 2,
+        "correctness": 2,
+        "completeness": 1,
+        "suitability": 2
+      },
+      "reasons": [
+        "二叉链式存储2n指针域、n−1条边，空指针n+1，原断言为错；题干宜明确二叉链式而非任意链式结构。"
+      ],
+      "content_label_basis": "new_assistant_reading",
+      "evidence": {
+        "review_type": "assistant_reading_not_independent_teacher"
+      }
+    },
+    {
+      "run_id": "tree-C-P1",
+      "kind": "programming",
+      "ordinal": 1,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 17,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 17
+        },
+        "independent_all_saved_cases_agree": false,
+        "correctness_note": "仅有限保存用例的输出一致，不是全域证明；无独立核对按历史助手规则记1，不能当作部分正确率。"
+      }
+    },
+    {
+      "run_id": "tree-C-P1",
+      "kind": "programming",
+      "ordinal": 2,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 16,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 16
+        },
+        "independent_all_saved_cases_agree": false,
+        "correctness_note": "仅有限保存用例的输出一致，不是全域证明；无独立核对按历史助手规则记1，不能当作部分正确率。"
+      }
+    },
+    {
+      "run_id": "tree-C-P1",
+      "kind": "programming",
+      "ordinal": 3,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 1,
+        "suitability": 2
+      },
+      "reasons": [
+        "单个整数列表也带有针对多个序列的模板文字；宜直接写翻转结点值按数值升序输出。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 17,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 17
+        },
+        "independent_all_saved_cases_agree": false,
+        "correctness_note": "仅有限保存用例的输出一致，不是全域证明；无独立核对按历史助手规则记1，不能当作部分正确率。"
+      }
+    },
+    {
+      "run_id": "tree-C-P1",
+      "kind": "programming",
+      "ordinal": 4,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 14,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 14
+        },
+        "independent_all_saved_cases_agree": false,
+        "correctness_note": "仅有限保存用例的输出一致，不是全域证明；无独立核对按历史助手规则记1，不能当作部分正确率。"
+      }
+    },
+    {
+      "run_id": "tree-C-P1",
+      "kind": "programming",
+      "ordinal": 5,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 16,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 16
+        },
+        "independent_all_saved_cases_agree": false,
+        "correctness_note": "仅有限保存用例的输出一致，不是全域证明；无独立核对按历史助手规则记1，不能当作部分正确率。"
+      }
+    },
+    {
+      "run_id": "tree-C-P1",
+      "kind": "programming",
+      "ordinal": 6,
+      "scores": {
+        "scope": 2,
+        "correctness": 1,
+        "completeness": 2,
+        "suitability": 2
+      },
+      "reasons": [
+        "本次阅读未发现必须修改的题面或教学适配问题；正确性证据另见basis。"
+      ],
+      "content_label_basis": "exact_content_match_to_historical_review_and_reread",
+      "evidence": {
+        "execution_passed": true,
+        "saved_cases": 18,
+        "finite_oracle": {
+          "passed": 0,
+          "flagged": 0,
+          "unassessed": 18
+        },
+        "independent_all_saved_cases_agree": false,
+        "correctness_note": "仅有限保存用例的输出一致，不是全域证明；无独立核对按历史助手规则记1，不能当作部分正确率。"
+      }
+    }
+  ],
+  "assignments": [
+    {
+      "run_id": "stack-A-P1",
+      "coverage_label": 2,
+      "coverage_reason": "含栈/队列互相实现、栈序列、计算器、队列应用；未强制每个知识点等额出题。",
+      "independent_quality_total": null,
+      "independent_teacher_score": null
+    },
+    {
+      "run_id": "sort-B-P1",
+      "coverage_label": 1,
+      "coverage_reason": "有稳定性、复杂度、实现及应用，但14道普通题中4道集中于快速排序，缺少具体中间排序过程的直接分析。",
+      "independent_quality_total": null,
+      "independent_teacher_score": null
+    },
+    {
+      "run_id": "tree-C-P1",
+      "coverage_label": 2,
+      "coverage_reason": "有二叉树性质、遍历推导、层序、遍历重建及路径/累加应用；课件范围仅为助手复核，仍待独立教师确认。",
+      "independent_quality_total": null,
+      "independent_teacher_score": null
+    }
+  ],
+  "limitations": [
+    "助手自身初评，不是盲评或独立教师评分。",
+    "回顾性评分不是预注册对照实验。",
+    "不比较历史90.7与本轮均分得出提升，任务及正确性证据覆盖不同。",
+    "高内容参考分不改变三条首次交付均未通过全部交付要求。",
+    "公开数据仅支持分数复算，不足以独立复评私有题目和课件。"
+  ]
+}

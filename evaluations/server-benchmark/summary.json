@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "scope": "author_reported_aggregate_results",
+  "notes": "The owner explicitly confirmed the latest submitted aggregates as new measurements. Teacher scores are approximately 82/78/88 with 20 assessed assignments per group. Rounded usage and human-group values retain approximate labels. OpenAI is direct API; about 48 successful external script executions do not establish the complete-assignment numerator. Latency samples are 57 unassisted successful CourseAgent runs, 60 OpenAI text responses, and 60 human runs. Historical scaling formulas in the submitted draft were not adopted as measurement provenance. Actual API bills remain unavailable.",
+  "groups": {
+    "courseagent": {
+      "completed_assignments": 58,
+      "unassisted_within_deadline": 57,
+      "requested_question_occurrences": 960,
+      "delivered_question_occurrences": 927,
+      "requirements_assessed_runs": 57,
+      "requirements_passed_runs": null,
+      "latency_success_n": 57,
+      "human_time_assessed_runs": 57,
+      "independent_quality_assessed_runs": 20,
+      "quality_assessed_questions": null,
+      "severe_defect_questions": 6,
+      "public_cases": 882,
+      "hidden_cases": 6615,
+      "logical_model_calls": 3380,
+      "http_requests": null,
+      "reported_tokens": 9000000,
+      "latency_p50_seconds": 509,
+      "latency_p90_seconds": 1001,
+      "human_minutes_mean": 0.5,
+      "independent_quality_score": 82,
+      "actual_api_cost_cny": null,
+      "ordinary_cross_run_repeat_rate": 0.38,
+      "programming_cross_run_repeat_rate": 0.33,
+      "delivered_ordinary_question_occurrences": 519,
+      "delivered_programming_question_occurrences": 408,
+      "latency_all_runs_n": null,
+      "assistant_review": {
+        "score": 91.5,
+        "assessed_assignments": 58
+      },
+      "fixed_algorithm_audit": {
+        "passed": 2470,
+        "unassessed": 4110,
+        "flagged": 0,
+        "unclassified_case_difference": 917,
+        "approximate": true
+      },
+      "human_interventions": {
+        "runs": 3,
+        "after_complete_generation": 1,
+        "after_timeout": 2
+      },
+      "separate_targeted_retest_performed": false,
+      "approximate_metrics": [
+        "logical_model_calls",
+        "reported_tokens",
+        "human_minutes_mean",
+        "independent_quality_score",
+        "severe_defect_questions"
+      ]
+    },
+    "openai_api": {
+      "completed_assignments": null,
+      "unassisted_within_deadline": 0,
+      "requested_question_occurrences": 960,
+      "delivered_question_occurrences": 791,
+      "requirements_assessed_runs": null,
+      "requirements_passed_runs": null,
+      "latency_success_n": null,
+      "human_time_assessed_runs": 60,
+      "independent_quality_assessed_runs": 20,
+      "quality_assessed_questions": null,
+      "severe_defect_questions": 25,
+      "public_cases": 800,
+      "hidden_cases": 5800,
+      "logical_model_calls": null,
+      "http_requests": 60,
+      "reported_tokens": 10500000,
+      "latency_p50_seconds": 490,
+      "latency_p90_seconds": null,
+      "human_minutes_mean": 20,
+      "independent_quality_score": 78,
+      "actual_api_cost_cny": null,
+      "ordinary_cross_run_repeat_rate": null,
+      "programming_cross_run_repeat_rate": null,
+      "delivered_ordinary_question_occurrences": 456,
+      "delivered_programming_question_occurrences": 335,
+      "latency_all_runs_n": 60,
+      "assistant_review": {
+        "score": 87,
+        "assessed_assignments": 48
+      },
+      "fixed_algorithm_audit": {
+        "passed": 0,
+        "unassessed": 360,
+        "flagged": 0,
+        "unclassified_case_difference": 6240,
+        "approximate": true
+      },
+      "external_script_execution": {
+        "succeeded_runs": 48,
+        "failed_or_rework_runs": 12,
+        "approximate": true,
+        "establishes_complete_assignment_count": false
+      },
+      "reported_cross_run_repeat_rate": 0.65,
+      "separate_targeted_retest_performed": false,
+      "approximate_metrics": [
+        "http_requests",
+        "reported_tokens",
+        "human_minutes_mean",
+        "independent_quality_score",
+        "severe_defect_questions",
+        "external_script_execution"
+      ]
+    },
+    "human": {
+      "completed_assignments": 60,
+      "unassisted_within_deadline": null,
+      "requested_question_occurrences": 960,
+      "delivered_question_occurrences": 960,
+      "requirements_assessed_runs": 60,
+      "requirements_passed_runs": null,
+      "latency_success_n": 60,
+      "human_time_assessed_runs": 60,
+      "independent_quality_assessed_runs": 20,
+      "quality_assessed_questions": null,
+      "severe_defect_questions": 1,
+      "public_cases": 880,
+      "hidden_cases": 6600,
+      "logical_model_calls": null,
+      "http_requests": null,
+      "reported_tokens": null,
+      "latency_p50_seconds": 2400,
+      "latency_p90_seconds": 4200,
+      "human_minutes_mean": 45,
+      "independent_quality_score": 88,
+      "actual_api_cost_cny": null,
+      "ordinary_cross_run_repeat_rate": 0.15,
+      "programming_cross_run_repeat_rate": 0.1,
+      "delivered_ordinary_question_occurrences": 519,
+      "delivered_programming_question_occurrences": 441,
+      "latency_all_runs_n": null,
+      "assistant_review": {
+        "score": 94,
+        "assessed_assignments": 60
+      },
+      "approximate_metrics": [
+        "public_cases",
+        "hidden_cases",
+        "latency_p50_seconds",
+        "latency_p90_seconds",
+        "ordinary_cross_run_repeat_rate",
+        "programming_cross_run_repeat_rate",
+        "independent_quality_score",
+        "human_minutes_mean",
+        "severe_defect_questions",
+        "assistant_review.score"
+      ]
+    }
+  },
+  "evidence_sha256": {},
+  "limitations": [
+    "Values are owner-confirmed aggregates, not independently audited against server records.",
+    "Approximate quantities are marked in approximate_metrics and in docs/evaluation.md.",
+    "Logical model calls and HTTP requests are different units; retry and token component coverage was not separately recorded.",
+    "OpenAI completion remains unknown; successful external script execution is a separate outcome.",
+    "Latency samples and timing endpoints differ across groups; no end-to-end speedup is computed.",
+    "CourseAgent human operation time covers 57/60 runs; no full-batch labor reduction is computed.",
+    "Audit category sums do not cover all reported programming cases; differences remain unclassified, not assumed passed or failed.",
+    "Acceptance counts have different definitions and do not establish a common independent quality pass rate.",
+    "Teacher scores cover 20 assignments per group; severe defect rates lack assessed-question denominators.",
+    "OpenAI repeat rate is not separated by question type.",
+    "Actual API costs require bills and remain null."
+  ]
+}

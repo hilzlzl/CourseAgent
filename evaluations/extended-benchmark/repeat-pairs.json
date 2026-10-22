@@ -1,0 +1,1460 @@
+[
+  {
+    "scope": "initial",
+    "case_id": "stack-A",
+    "kind": "programming",
+    "left": "stack-A-R1",
+    "right": "stack-A-R2",
+    "matched": 4,
+    "denominator": 8
+  },
+  {
+    "scope": "initial",
+    "case_id": "stack-A",
+    "kind": "programming",
+    "left": "stack-A-R1",
+    "right": "stack-A-R3",
+    "matched": 5,
+    "denominator": 8
+  },
+  {
+    "scope": "initial",
+    "case_id": "sort-B",
+    "kind": "ordinary",
+    "left": "sort-B-R1",
+    "right": "sort-B-R2",
+    "matched": 6,
+    "denominator": 14
+  },
+  {
+    "scope": "initial",
+    "case_id": "sort-B",
+    "kind": "programming",
+    "left": "sort-B-R1",
+    "right": "sort-B-R2",
+    "matched": 5,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "sort-B",
+    "kind": "ordinary",
+    "left": "sort-B-R1",
+    "right": "sort-B-R3",
+    "matched": 11,
+    "denominator": 14
+  },
+  {
+    "scope": "initial",
+    "case_id": "sort-B",
+    "kind": "programming",
+    "left": "sort-B-R1",
+    "right": "sort-B-R3",
+    "matched": 5,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "tree-C",
+    "kind": "ordinary",
+    "left": "tree-C-R1",
+    "right": "tree-C-R2",
+    "matched": 2,
+    "denominator": 10
+  },
+  {
+    "scope": "initial",
+    "case_id": "tree-C",
+    "kind": "programming",
+    "left": "tree-C-R1",
+    "right": "tree-C-R2",
+    "matched": 2,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "tree-C",
+    "kind": "ordinary",
+    "left": "tree-C-R1",
+    "right": "tree-C-R3",
+    "matched": 2,
+    "denominator": 10
+  },
+  {
+    "scope": "initial",
+    "case_id": "tree-C",
+    "kind": "programming",
+    "left": "tree-C-R1",
+    "right": "tree-C-R3",
+    "matched": 4,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "stack-B",
+    "kind": "ordinary",
+    "left": "stack-B-R1",
+    "right": "stack-B-R2",
+    "matched": 11,
+    "denominator": 14
+  },
+  {
+    "scope": "initial",
+    "case_id": "stack-B",
+    "kind": "programming",
+    "left": "stack-B-R1",
+    "right": "stack-B-R2",
+    "matched": 4,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "stack-B",
+    "kind": "ordinary",
+    "left": "stack-B-R1",
+    "right": "stack-B-R3",
+    "matched": 10,
+    "denominator": 14
+  },
+  {
+    "scope": "initial",
+    "case_id": "stack-B",
+    "kind": "programming",
+    "left": "stack-B-R1",
+    "right": "stack-B-R3",
+    "matched": 2,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "stack-C",
+    "kind": "ordinary",
+    "left": "stack-C-R1",
+    "right": "stack-C-R2",
+    "matched": 7,
+    "denominator": 10
+  },
+  {
+    "scope": "initial",
+    "case_id": "stack-C",
+    "kind": "programming",
+    "left": "stack-C-R1",
+    "right": "stack-C-R2",
+    "matched": 2,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "stack-C",
+    "kind": "ordinary",
+    "left": "stack-C-R1",
+    "right": "stack-C-R3",
+    "matched": 7,
+    "denominator": 10
+  },
+  {
+    "scope": "initial",
+    "case_id": "stack-C",
+    "kind": "programming",
+    "left": "stack-C-R1",
+    "right": "stack-C-R3",
+    "matched": 5,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "sort-A",
+    "kind": "programming",
+    "left": "sort-A-R1",
+    "right": "sort-A-R2",
+    "matched": 7,
+    "denominator": 8
+  },
+  {
+    "scope": "initial",
+    "case_id": "sort-A",
+    "kind": "programming",
+    "left": "sort-A-R1",
+    "right": "sort-A-R3",
+    "matched": 7,
+    "denominator": 8
+  },
+  {
+    "scope": "initial",
+    "case_id": "sort-C",
+    "kind": "ordinary",
+    "left": "sort-C-R1",
+    "right": "sort-C-R2",
+    "matched": 9,
+    "denominator": 10
+  },
+  {
+    "scope": "initial",
+    "case_id": "sort-C",
+    "kind": "programming",
+    "left": "sort-C-R1",
+    "right": "sort-C-R2",
+    "matched": 5,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "sort-C",
+    "kind": "ordinary",
+    "left": "sort-C-R1",
+    "right": "sort-C-R3",
+    "matched": 6,
+    "denominator": 10
+  },
+  {
+    "scope": "initial",
+    "case_id": "sort-C",
+    "kind": "programming",
+    "left": "sort-C-R1",
+    "right": "sort-C-R3",
+    "matched": 5,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "search-A",
+    "kind": "programming",
+    "left": "search-A-R1",
+    "right": "search-A-R2",
+    "matched": 3,
+    "denominator": 8
+  },
+  {
+    "scope": "initial",
+    "case_id": "search-A",
+    "kind": "programming",
+    "left": "search-A-R1",
+    "right": "search-A-R3",
+    "matched": 4,
+    "denominator": 8
+  },
+  {
+    "scope": "initial",
+    "case_id": "search-B",
+    "kind": "ordinary",
+    "left": "search-B-R1",
+    "right": "search-B-R2",
+    "matched": 5,
+    "denominator": 14
+  },
+  {
+    "scope": "initial",
+    "case_id": "search-B",
+    "kind": "programming",
+    "left": "search-B-R1",
+    "right": "search-B-R2",
+    "matched": 3,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "search-C",
+    "kind": "ordinary",
+    "left": "search-C-R1",
+    "right": "search-C-R2",
+    "matched": 7,
+    "denominator": 10
+  },
+  {
+    "scope": "initial",
+    "case_id": "search-C",
+    "kind": "programming",
+    "left": "search-C-R1",
+    "right": "search-C-R2",
+    "matched": 5,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "search-C",
+    "kind": "ordinary",
+    "left": "search-C-R1",
+    "right": "search-C-R3",
+    "matched": 8,
+    "denominator": 10
+  },
+  {
+    "scope": "initial",
+    "case_id": "search-C",
+    "kind": "programming",
+    "left": "search-C-R1",
+    "right": "search-C-R3",
+    "matched": 4,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "tree-A",
+    "kind": "programming",
+    "left": "tree-A-R1",
+    "right": "tree-A-R2",
+    "matched": 4,
+    "denominator": 8
+  },
+  {
+    "scope": "initial",
+    "case_id": "tree-A",
+    "kind": "programming",
+    "left": "tree-A-R1",
+    "right": "tree-A-R3",
+    "matched": 1,
+    "denominator": 8
+  },
+  {
+    "scope": "initial",
+    "case_id": "tree-B",
+    "kind": "ordinary",
+    "left": "tree-B-R1",
+    "right": "tree-B-R2",
+    "matched": 4,
+    "denominator": 14
+  },
+  {
+    "scope": "initial",
+    "case_id": "tree-B",
+    "kind": "programming",
+    "left": "tree-B-R1",
+    "right": "tree-B-R2",
+    "matched": 1,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "tree-B",
+    "kind": "ordinary",
+    "left": "tree-B-R1",
+    "right": "tree-B-R3",
+    "matched": 4,
+    "denominator": 14
+  },
+  {
+    "scope": "initial",
+    "case_id": "tree-B",
+    "kind": "programming",
+    "left": "tree-B-R1",
+    "right": "tree-B-R3",
+    "matched": 2,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "stack-A",
+    "kind": "programming",
+    "left": "stack-A-R2",
+    "right": "stack-A-R3",
+    "matched": 4,
+    "denominator": 8
+  },
+  {
+    "scope": "initial",
+    "case_id": "sort-B",
+    "kind": "ordinary",
+    "left": "sort-B-R2",
+    "right": "sort-B-R3",
+    "matched": 4,
+    "denominator": 14
+  },
+  {
+    "scope": "initial",
+    "case_id": "sort-B",
+    "kind": "programming",
+    "left": "sort-B-R2",
+    "right": "sort-B-R3",
+    "matched": 5,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "tree-C",
+    "kind": "ordinary",
+    "left": "tree-C-R2",
+    "right": "tree-C-R3",
+    "matched": 9,
+    "denominator": 10
+  },
+  {
+    "scope": "initial",
+    "case_id": "tree-C",
+    "kind": "programming",
+    "left": "tree-C-R2",
+    "right": "tree-C-R3",
+    "matched": 1,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "stack-B",
+    "kind": "ordinary",
+    "left": "stack-B-R2",
+    "right": "stack-B-R3",
+    "matched": 12,
+    "denominator": 14
+  },
+  {
+    "scope": "initial",
+    "case_id": "stack-B",
+    "kind": "programming",
+    "left": "stack-B-R2",
+    "right": "stack-B-R3",
+    "matched": 2,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "stack-C",
+    "kind": "ordinary",
+    "left": "stack-C-R2",
+    "right": "stack-C-R3",
+    "matched": 6,
+    "denominator": 10
+  },
+  {
+    "scope": "initial",
+    "case_id": "stack-C",
+    "kind": "programming",
+    "left": "stack-C-R2",
+    "right": "stack-C-R3",
+    "matched": 1,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "sort-A",
+    "kind": "programming",
+    "left": "sort-A-R2",
+    "right": "sort-A-R3",
+    "matched": 7,
+    "denominator": 8
+  },
+  {
+    "scope": "initial",
+    "case_id": "sort-C",
+    "kind": "ordinary",
+    "left": "sort-C-R2",
+    "right": "sort-C-R3",
+    "matched": 6,
+    "denominator": 10
+  },
+  {
+    "scope": "initial",
+    "case_id": "sort-C",
+    "kind": "programming",
+    "left": "sort-C-R2",
+    "right": "sort-C-R3",
+    "matched": 4,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "search-A",
+    "kind": "programming",
+    "left": "search-A-R2",
+    "right": "search-A-R3",
+    "matched": 3,
+    "denominator": 8
+  },
+  {
+    "scope": "initial",
+    "case_id": "search-C",
+    "kind": "ordinary",
+    "left": "search-C-R2",
+    "right": "search-C-R3",
+    "matched": 9,
+    "denominator": 10
+  },
+  {
+    "scope": "initial",
+    "case_id": "search-C",
+    "kind": "programming",
+    "left": "search-C-R2",
+    "right": "search-C-R3",
+    "matched": 4,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "tree-A",
+    "kind": "programming",
+    "left": "tree-A-R2",
+    "right": "tree-A-R3",
+    "matched": 1,
+    "denominator": 8
+  },
+  {
+    "scope": "initial",
+    "case_id": "tree-B",
+    "kind": "ordinary",
+    "left": "tree-B-R2",
+    "right": "tree-B-R3",
+    "matched": 11,
+    "denominator": 14
+  },
+  {
+    "scope": "initial",
+    "case_id": "tree-B",
+    "kind": "programming",
+    "left": "tree-B-R2",
+    "right": "tree-B-R3",
+    "matched": 1,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "list-A",
+    "kind": "programming",
+    "left": "list-A-R1",
+    "right": "list-A-R2",
+    "matched": 5,
+    "denominator": 8
+  },
+  {
+    "scope": "initial",
+    "case_id": "list-A",
+    "kind": "programming",
+    "left": "list-A-R1",
+    "right": "list-A-R3",
+    "matched": 5,
+    "denominator": 8
+  },
+  {
+    "scope": "initial",
+    "case_id": "list-C",
+    "kind": "ordinary",
+    "left": "list-C-R1",
+    "right": "list-C-R2",
+    "matched": 0,
+    "denominator": 10
+  },
+  {
+    "scope": "initial",
+    "case_id": "list-C",
+    "kind": "programming",
+    "left": "list-C-R1",
+    "right": "list-C-R2",
+    "matched": 3,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "list-C",
+    "kind": "ordinary",
+    "left": "list-C-R1",
+    "right": "list-C-R3",
+    "matched": 0,
+    "denominator": 10
+  },
+  {
+    "scope": "initial",
+    "case_id": "list-C",
+    "kind": "programming",
+    "left": "list-C-R1",
+    "right": "list-C-R3",
+    "matched": 2,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "list-B",
+    "kind": "ordinary",
+    "left": "list-B-R1",
+    "right": "list-B-R2",
+    "matched": 12,
+    "denominator": 14
+  },
+  {
+    "scope": "initial",
+    "case_id": "list-B",
+    "kind": "programming",
+    "left": "list-B-R1",
+    "right": "list-B-R2",
+    "matched": 4,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "list-B",
+    "kind": "ordinary",
+    "left": "list-B-R1",
+    "right": "list-B-R3",
+    "matched": 11,
+    "denominator": 14
+  },
+  {
+    "scope": "initial",
+    "case_id": "list-B",
+    "kind": "programming",
+    "left": "list-B-R1",
+    "right": "list-B-R3",
+    "matched": 4,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "string-A",
+    "kind": "programming",
+    "left": "string-A-R1",
+    "right": "string-A-R2",
+    "matched": 4,
+    "denominator": 8
+  },
+  {
+    "scope": "initial",
+    "case_id": "string-A",
+    "kind": "programming",
+    "left": "string-A-R1",
+    "right": "string-A-R3",
+    "matched": 5,
+    "denominator": 8
+  },
+  {
+    "scope": "initial",
+    "case_id": "list-A",
+    "kind": "programming",
+    "left": "list-A-R2",
+    "right": "list-A-R3",
+    "matched": 6,
+    "denominator": 8
+  },
+  {
+    "scope": "initial",
+    "case_id": "list-C",
+    "kind": "ordinary",
+    "left": "list-C-R2",
+    "right": "list-C-R3",
+    "matched": 0,
+    "denominator": 10
+  },
+  {
+    "scope": "initial",
+    "case_id": "list-C",
+    "kind": "programming",
+    "left": "list-C-R2",
+    "right": "list-C-R3",
+    "matched": 3,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "list-B",
+    "kind": "ordinary",
+    "left": "list-B-R2",
+    "right": "list-B-R3",
+    "matched": 12,
+    "denominator": 14
+  },
+  {
+    "scope": "initial",
+    "case_id": "list-B",
+    "kind": "programming",
+    "left": "list-B-R2",
+    "right": "list-B-R3",
+    "matched": 3,
+    "denominator": 6
+  },
+  {
+    "scope": "initial",
+    "case_id": "string-A",
+    "kind": "programming",
+    "left": "string-A-R2",
+    "right": "string-A-R3",
+    "matched": 7,
+    "denominator": 8
+  },
+  {
+    "scope": "initial",
+    "case_id": "graph-B",
+    "kind": "ordinary",
+    "left": "graph-B-R2",
+    "right": "graph-B-R3",
+    "matched": 14,
+    "denominator": 14
+  },
+  {
+    "scope": "initial",
+    "case_id": "graph-B",
+    "kind": "programming",
+    "left": "graph-B-R2",
+    "right": "graph-B-R3",
+    "matched": 3,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "stack-A",
+    "kind": "programming",
+    "left": "stack-A-R1",
+    "right": "stack-A-R2",
+    "matched": 4,
+    "denominator": 8
+  },
+  {
+    "scope": "replaced",
+    "case_id": "stack-A",
+    "kind": "programming",
+    "left": "stack-A-R1",
+    "right": "stack-A-R3",
+    "matched": 5,
+    "denominator": 8
+  },
+  {
+    "scope": "replaced",
+    "case_id": "sort-B",
+    "kind": "ordinary",
+    "left": "sort-B-R1",
+    "right": "sort-B-R2",
+    "matched": 6,
+    "denominator": 14
+  },
+  {
+    "scope": "replaced",
+    "case_id": "sort-B",
+    "kind": "programming",
+    "left": "sort-B-R1",
+    "right": "sort-B-R2",
+    "matched": 5,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "sort-B",
+    "kind": "ordinary",
+    "left": "sort-B-R1",
+    "right": "sort-B-R3",
+    "matched": 11,
+    "denominator": 14
+  },
+  {
+    "scope": "replaced",
+    "case_id": "sort-B",
+    "kind": "programming",
+    "left": "sort-B-R1",
+    "right": "sort-B-R3",
+    "matched": 5,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "tree-C",
+    "kind": "ordinary",
+    "left": "tree-C-R1",
+    "right": "tree-C-R2",
+    "matched": 2,
+    "denominator": 10
+  },
+  {
+    "scope": "replaced",
+    "case_id": "tree-C",
+    "kind": "programming",
+    "left": "tree-C-R1",
+    "right": "tree-C-R2",
+    "matched": 2,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "tree-C",
+    "kind": "ordinary",
+    "left": "tree-C-R1",
+    "right": "tree-C-R3",
+    "matched": 2,
+    "denominator": 10
+  },
+  {
+    "scope": "replaced",
+    "case_id": "tree-C",
+    "kind": "programming",
+    "left": "tree-C-R1",
+    "right": "tree-C-R3",
+    "matched": 4,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "stack-B",
+    "kind": "ordinary",
+    "left": "stack-B-R1",
+    "right": "stack-B-R2",
+    "matched": 11,
+    "denominator": 14
+  },
+  {
+    "scope": "replaced",
+    "case_id": "stack-B",
+    "kind": "programming",
+    "left": "stack-B-R1",
+    "right": "stack-B-R2",
+    "matched": 4,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "stack-B",
+    "kind": "ordinary",
+    "left": "stack-B-R1",
+    "right": "stack-B-R3",
+    "matched": 10,
+    "denominator": 14
+  },
+  {
+    "scope": "replaced",
+    "case_id": "stack-B",
+    "kind": "programming",
+    "left": "stack-B-R1",
+    "right": "stack-B-R3",
+    "matched": 2,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "stack-C",
+    "kind": "ordinary",
+    "left": "stack-C-R1",
+    "right": "stack-C-R2",
+    "matched": 7,
+    "denominator": 10
+  },
+  {
+    "scope": "replaced",
+    "case_id": "stack-C",
+    "kind": "programming",
+    "left": "stack-C-R1",
+    "right": "stack-C-R2",
+    "matched": 2,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "stack-C",
+    "kind": "ordinary",
+    "left": "stack-C-R1",
+    "right": "stack-C-R3",
+    "matched": 7,
+    "denominator": 10
+  },
+  {
+    "scope": "replaced",
+    "case_id": "stack-C",
+    "kind": "programming",
+    "left": "stack-C-R1",
+    "right": "stack-C-R3",
+    "matched": 5,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "sort-A",
+    "kind": "programming",
+    "left": "sort-A-R1",
+    "right": "sort-A-R2",
+    "matched": 7,
+    "denominator": 8
+  },
+  {
+    "scope": "replaced",
+    "case_id": "sort-A",
+    "kind": "programming",
+    "left": "sort-A-R1",
+    "right": "sort-A-R3",
+    "matched": 7,
+    "denominator": 8
+  },
+  {
+    "scope": "replaced",
+    "case_id": "sort-C",
+    "kind": "ordinary",
+    "left": "sort-C-R1",
+    "right": "sort-C-R2",
+    "matched": 9,
+    "denominator": 10
+  },
+  {
+    "scope": "replaced",
+    "case_id": "sort-C",
+    "kind": "programming",
+    "left": "sort-C-R1",
+    "right": "sort-C-R2",
+    "matched": 5,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "sort-C",
+    "kind": "ordinary",
+    "left": "sort-C-R1",
+    "right": "sort-C-R3",
+    "matched": 6,
+    "denominator": 10
+  },
+  {
+    "scope": "replaced",
+    "case_id": "sort-C",
+    "kind": "programming",
+    "left": "sort-C-R1",
+    "right": "sort-C-R3",
+    "matched": 5,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "search-A",
+    "kind": "programming",
+    "left": "search-A-R1",
+    "right": "search-A-R2",
+    "matched": 3,
+    "denominator": 8
+  },
+  {
+    "scope": "replaced",
+    "case_id": "search-A",
+    "kind": "programming",
+    "left": "search-A-R1",
+    "right": "search-A-R3",
+    "matched": 4,
+    "denominator": 8
+  },
+  {
+    "scope": "replaced",
+    "case_id": "search-B",
+    "kind": "ordinary",
+    "left": "search-B-R1",
+    "right": "search-B-R2",
+    "matched": 5,
+    "denominator": 14
+  },
+  {
+    "scope": "replaced",
+    "case_id": "search-B",
+    "kind": "programming",
+    "left": "search-B-R1",
+    "right": "search-B-R2",
+    "matched": 3,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "search-C",
+    "kind": "ordinary",
+    "left": "search-C-R1",
+    "right": "search-C-R2",
+    "matched": 7,
+    "denominator": 10
+  },
+  {
+    "scope": "replaced",
+    "case_id": "search-C",
+    "kind": "programming",
+    "left": "search-C-R1",
+    "right": "search-C-R2",
+    "matched": 5,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "search-C",
+    "kind": "ordinary",
+    "left": "search-C-R1",
+    "right": "search-C-R3",
+    "matched": 8,
+    "denominator": 10
+  },
+  {
+    "scope": "replaced",
+    "case_id": "search-C",
+    "kind": "programming",
+    "left": "search-C-R1",
+    "right": "search-C-R3",
+    "matched": 4,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "tree-A",
+    "kind": "programming",
+    "left": "tree-A-R1",
+    "right": "tree-A-R2",
+    "matched": 4,
+    "denominator": 8
+  },
+  {
+    "scope": "replaced",
+    "case_id": "tree-A",
+    "kind": "programming",
+    "left": "tree-A-R1",
+    "right": "tree-A-R3",
+    "matched": 1,
+    "denominator": 8
+  },
+  {
+    "scope": "replaced",
+    "case_id": "tree-B",
+    "kind": "ordinary",
+    "left": "tree-B-R1",
+    "right": "tree-B-R2",
+    "matched": 4,
+    "denominator": 14
+  },
+  {
+    "scope": "replaced",
+    "case_id": "tree-B",
+    "kind": "programming",
+    "left": "tree-B-R1",
+    "right": "tree-B-R2",
+    "matched": 1,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "tree-B",
+    "kind": "ordinary",
+    "left": "tree-B-R1",
+    "right": "tree-B-R3",
+    "matched": 4,
+    "denominator": 14
+  },
+  {
+    "scope": "replaced",
+    "case_id": "tree-B",
+    "kind": "programming",
+    "left": "tree-B-R1",
+    "right": "tree-B-R3",
+    "matched": 2,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "stack-A",
+    "kind": "programming",
+    "left": "stack-A-R2",
+    "right": "stack-A-R3",
+    "matched": 4,
+    "denominator": 8
+  },
+  {
+    "scope": "replaced",
+    "case_id": "sort-B",
+    "kind": "ordinary",
+    "left": "sort-B-R2",
+    "right": "sort-B-R3",
+    "matched": 4,
+    "denominator": 14
+  },
+  {
+    "scope": "replaced",
+    "case_id": "sort-B",
+    "kind": "programming",
+    "left": "sort-B-R2",
+    "right": "sort-B-R3",
+    "matched": 5,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "tree-C",
+    "kind": "ordinary",
+    "left": "tree-C-R2",
+    "right": "tree-C-R3",
+    "matched": 9,
+    "denominator": 10
+  },
+  {
+    "scope": "replaced",
+    "case_id": "tree-C",
+    "kind": "programming",
+    "left": "tree-C-R2",
+    "right": "tree-C-R3",
+    "matched": 1,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "stack-B",
+    "kind": "ordinary",
+    "left": "stack-B-R2",
+    "right": "stack-B-R3",
+    "matched": 12,
+    "denominator": 14
+  },
+  {
+    "scope": "replaced",
+    "case_id": "stack-B",
+    "kind": "programming",
+    "left": "stack-B-R2",
+    "right": "stack-B-R3",
+    "matched": 2,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "stack-C",
+    "kind": "ordinary",
+    "left": "stack-C-R2",
+    "right": "stack-C-R3",
+    "matched": 6,
+    "denominator": 10
+  },
+  {
+    "scope": "replaced",
+    "case_id": "stack-C",
+    "kind": "programming",
+    "left": "stack-C-R2",
+    "right": "stack-C-R3",
+    "matched": 1,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "sort-A",
+    "kind": "programming",
+    "left": "sort-A-R2",
+    "right": "sort-A-R3",
+    "matched": 7,
+    "denominator": 8
+  },
+  {
+    "scope": "replaced",
+    "case_id": "sort-C",
+    "kind": "ordinary",
+    "left": "sort-C-R2",
+    "right": "sort-C-R3",
+    "matched": 6,
+    "denominator": 10
+  },
+  {
+    "scope": "replaced",
+    "case_id": "sort-C",
+    "kind": "programming",
+    "left": "sort-C-R2",
+    "right": "sort-C-R3",
+    "matched": 4,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "search-A",
+    "kind": "programming",
+    "left": "search-A-R2",
+    "right": "search-A-R3",
+    "matched": 3,
+    "denominator": 8
+  },
+  {
+    "scope": "replaced",
+    "case_id": "search-C",
+    "kind": "ordinary",
+    "left": "search-C-R2",
+    "right": "search-C-R3",
+    "matched": 9,
+    "denominator": 10
+  },
+  {
+    "scope": "replaced",
+    "case_id": "search-C",
+    "kind": "programming",
+    "left": "search-C-R2",
+    "right": "search-C-R3",
+    "matched": 4,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "tree-A",
+    "kind": "programming",
+    "left": "tree-A-R2",
+    "right": "tree-A-R3",
+    "matched": 1,
+    "denominator": 8
+  },
+  {
+    "scope": "replaced",
+    "case_id": "tree-B",
+    "kind": "ordinary",
+    "left": "tree-B-R2",
+    "right": "tree-B-R3",
+    "matched": 11,
+    "denominator": 14
+  },
+  {
+    "scope": "replaced",
+    "case_id": "tree-B",
+    "kind": "programming",
+    "left": "tree-B-R2",
+    "right": "tree-B-R3",
+    "matched": 1,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "list-A",
+    "kind": "programming",
+    "left": "list-A-R1",
+    "right": "list-A-R2",
+    "matched": 5,
+    "denominator": 8
+  },
+  {
+    "scope": "replaced",
+    "case_id": "list-A",
+    "kind": "programming",
+    "left": "list-A-R1",
+    "right": "list-A-R3",
+    "matched": 5,
+    "denominator": 8
+  },
+  {
+    "scope": "replaced",
+    "case_id": "string-B",
+    "kind": "ordinary",
+    "left": "string-B-R1-retry1",
+    "right": "string-B-R2",
+    "matched": 0,
+    "denominator": 14
+  },
+  {
+    "scope": "replaced",
+    "case_id": "string-B",
+    "kind": "programming",
+    "left": "string-B-R1-retry1",
+    "right": "string-B-R2",
+    "matched": 1,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "string-B",
+    "kind": "ordinary",
+    "left": "string-B-R1-retry1",
+    "right": "string-B-R3-retry1",
+    "matched": 14,
+    "denominator": 14
+  },
+  {
+    "scope": "replaced",
+    "case_id": "string-B",
+    "kind": "programming",
+    "left": "string-B-R1-retry1",
+    "right": "string-B-R3-retry1",
+    "matched": 5,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "list-C",
+    "kind": "ordinary",
+    "left": "list-C-R1",
+    "right": "list-C-R2",
+    "matched": 0,
+    "denominator": 10
+  },
+  {
+    "scope": "replaced",
+    "case_id": "list-C",
+    "kind": "programming",
+    "left": "list-C-R1",
+    "right": "list-C-R2",
+    "matched": 3,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "list-C",
+    "kind": "ordinary",
+    "left": "list-C-R1",
+    "right": "list-C-R3",
+    "matched": 0,
+    "denominator": 10
+  },
+  {
+    "scope": "replaced",
+    "case_id": "list-C",
+    "kind": "programming",
+    "left": "list-C-R1",
+    "right": "list-C-R3",
+    "matched": 2,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "list-B",
+    "kind": "ordinary",
+    "left": "list-B-R1",
+    "right": "list-B-R2",
+    "matched": 12,
+    "denominator": 14
+  },
+  {
+    "scope": "replaced",
+    "case_id": "list-B",
+    "kind": "programming",
+    "left": "list-B-R1",
+    "right": "list-B-R2",
+    "matched": 4,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "list-B",
+    "kind": "ordinary",
+    "left": "list-B-R1",
+    "right": "list-B-R3",
+    "matched": 11,
+    "denominator": 14
+  },
+  {
+    "scope": "replaced",
+    "case_id": "list-B",
+    "kind": "programming",
+    "left": "list-B-R1",
+    "right": "list-B-R3",
+    "matched": 4,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "string-C",
+    "kind": "ordinary",
+    "left": "string-C-R1-retry1",
+    "right": "string-C-R2",
+    "matched": 3,
+    "denominator": 10
+  },
+  {
+    "scope": "replaced",
+    "case_id": "string-C",
+    "kind": "programming",
+    "left": "string-C-R1-retry1",
+    "right": "string-C-R2",
+    "matched": 2,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "string-A",
+    "kind": "programming",
+    "left": "string-A-R1",
+    "right": "string-A-R2",
+    "matched": 4,
+    "denominator": 8
+  },
+  {
+    "scope": "replaced",
+    "case_id": "string-A",
+    "kind": "programming",
+    "left": "string-A-R1",
+    "right": "string-A-R3",
+    "matched": 5,
+    "denominator": 8
+  },
+  {
+    "scope": "replaced",
+    "case_id": "list-A",
+    "kind": "programming",
+    "left": "list-A-R2",
+    "right": "list-A-R3",
+    "matched": 6,
+    "denominator": 8
+  },
+  {
+    "scope": "replaced",
+    "case_id": "string-B",
+    "kind": "ordinary",
+    "left": "string-B-R2",
+    "right": "string-B-R3-retry1",
+    "matched": 0,
+    "denominator": 14
+  },
+  {
+    "scope": "replaced",
+    "case_id": "string-B",
+    "kind": "programming",
+    "left": "string-B-R2",
+    "right": "string-B-R3-retry1",
+    "matched": 1,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "list-C",
+    "kind": "ordinary",
+    "left": "list-C-R2",
+    "right": "list-C-R3",
+    "matched": 0,
+    "denominator": 10
+  },
+  {
+    "scope": "replaced",
+    "case_id": "list-C",
+    "kind": "programming",
+    "left": "list-C-R2",
+    "right": "list-C-R3",
+    "matched": 3,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "list-B",
+    "kind": "ordinary",
+    "left": "list-B-R2",
+    "right": "list-B-R3",
+    "matched": 12,
+    "denominator": 14
+  },
+  {
+    "scope": "replaced",
+    "case_id": "list-B",
+    "kind": "programming",
+    "left": "list-B-R2",
+    "right": "list-B-R3",
+    "matched": 3,
+    "denominator": 6
+  },
+  {
+    "scope": "replaced",
+    "case_id": "string-A",
+    "kind": "programming",
+    "left": "string-A-R2",
+    "right": "string-A-R3",
+    "matched": 7,
+    "denominator": 8
+  },
+  {
+    "scope": "replaced",
+    "case_id": "graph-B",
+    "kind": "ordinary",
+    "left": "graph-B-R2",
+    "right": "graph-B-R3",
+    "matched": 14,
+    "denominator": 14
+  },
+  {
+    "scope": "replaced",
+    "case_id": "graph-B",
+    "kind": "programming",
+    "left": "graph-B-R2",
+    "right": "graph-B-R3",
+    "matched": 3,
+    "denominator": 6
+  },
+  {
+    "scope": "retry",
+    "case_id": "string-B",
+    "kind": "ordinary",
+    "left": "string-B-R1-retry1",
+    "right": "string-B-R3-retry1",
+    "matched": 14,
+    "denominator": 14
+  },
+  {
+    "scope": "retry",
+    "case_id": "string-B",
+    "kind": "programming",
+    "left": "string-B-R1-retry1",
+    "right": "string-B-R3-retry1",
+    "matched": 5,
+    "denominator": 6
+  }
+]

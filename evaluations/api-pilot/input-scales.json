@@ -1,0 +1,23 @@
+[
+  {
+    "problem": "用栈实现队列",
+    "source_slug": "implement-queue-using-stacks",
+    "unit": "方法调用次数（排除初始化）",
+    "run_id": "stack-A-P1",
+    "maximum_saved_input_size": 100
+  },
+  {
+    "problem": "用队列实现栈",
+    "source_slug": "implement-stack-using-queues",
+    "unit": "方法调用次数（排除初始化）",
+    "run_id": "stack-A-P1",
+    "maximum_saved_input_size": 100
+  },
+  {
+    "problem": "验证栈序列",
+    "source_slug": "validate-stack-sequences",
+    "unit": "单个序列元素数",
+    "run_id": "stack-A-P1",
+    "maximum_saved_input_size": 1000
+  }
+]
