@@ -1,5 +1,7 @@
 # 安装与使用
 
+简体中文 · [English](quickstart.en.md)
+
 ## 1. 环境
 
 推荐 Ubuntu / Debian 或 Windows WSL2，Python 3.11+。若创建虚拟环境提示缺少 ensurepip，请先安装系统的 `python3-venv` 包。仅界面、普通题和文档导出需要 Python；编程执行额外依赖 Linux bubblewrap；默认平台交付需要 Node.js 20+ 和 Chrome。仅本地生成普通题及运行固定演示时可不安装浏览器组件。

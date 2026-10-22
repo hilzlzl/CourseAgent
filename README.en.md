@@ -6,7 +6,7 @@
 
 CourseAgent is a local LangGraph application that collects ordinary and programming questions in parallel, matches course scope, checks answers and runs reference programs in isolation. It exports Excel, JSON and teacher assessment packages. By default, it delivers to an unpublished Educoder exam and retains local files. Local generation without platform delivery is also available.
 
-[Installation and usage](docs/quickstart.md) · [Architecture](docs/architecture.md) · [Evaluation](docs/evaluation.md) · [Development and publishing](CONTRIBUTING.md)
+[Installation and usage](docs/quickstart.en.md) · [Architecture](docs/architecture.en.md) · [Evaluation](docs/evaluation.en.md) · [Development and publishing (Chinese)](CONTRIBUTING.md)
 
 ## Features
 
@@ -29,7 +29,7 @@ flowchart LR
     S -. resume saved progress .-> T
 ```
 
-Tasks and checkpoints persist in SQLite. Per-question caches reuse passed checks; content changes invalidate related validation records. Programming checks rely on source programs and finite examples, so teachers should review the result. [Architecture and recovery](docs/architecture.md).
+Tasks and checkpoints persist in SQLite. Per-question caches reuse passed checks; content changes invalidate related validation records. Programming checks rely on source programs and finite examples, so teachers should review the result. [Architecture and recovery](docs/architecture.en.md).
 
 ## Quick start
 
@@ -46,13 +46,13 @@ bash start.sh
 
 Open <http://127.0.0.1:8765/>. The fixed demo requires no API key and writes example files to `outputs/demo/`.
 Before real generation, copy `model-config.example.json` to `model-config.local.json` and configure your own model service.
-See [installation and usage](docs/quickstart.md) for environment checks, sandbox setup and optional retrieval and browser dependencies. Detailed guides are currently in Chinese.
+See [installation and usage](docs/quickstart.en.md) for environment checks, sandbox setup and optional retrieval and browser dependencies.
 
 Submit a request such as:
 
 > Create an assignment on stacks and queues with four multiple-choice questions, four true/false questions and four programming questions. Include reference answers, public examples and hidden tests.
 
-Enter the classroom exam-list URL and course name for default platform delivery. The saved exam remains unpublished until the teacher publishes it. Select local generation to produce files only. Text-based PDF and DOCX files can define course scope; see [setup](docs/quickstart.md#4-提交真实需求) for browser and login requirements.
+Enter the classroom exam-list URL and course name for default platform delivery. The saved exam remains unpublished until the teacher publishes it. Select local generation to produce files only. Text-based PDF and DOCX files can define course scope; see [setup](docs/quickstart.en.md#4-submit-a-real-request) for browser and login requirements.
 
 ## Evaluation
 
@@ -64,7 +64,7 @@ CourseAgent was evaluated on **20 requirements with three repetitions each, tota
 | Question completion rate | **97.26% (852/876)** |
 | Complete assignment rate | **91.67% (55/60)** |
 
-These rates measure generation completion. Question quality and platform save-and-readback outcomes are evaluated separately. See [evaluation](docs/evaluation.md) for the experimental setup, metric definitions and scoring rules, and [experiment records](evaluations/README.md) for aggregation details and source records.
+These rates measure generation completion. Question quality and platform save-and-readback outcomes are evaluated separately. See [evaluation](docs/evaluation.en.md) for the experimental setup, metric definitions and scoring rules, and [experiment records (Chinese)](evaluations/README.md) for aggregation details and source records.
 
 ## Project navigation
 
@@ -72,9 +72,9 @@ These rates measure generation completion. Question quality and platform save-an
 | --- | --- |
 | [src/courseagent/](src/courseagent/) | Python services, agent, retrieval and verification; `web/` contains the workbench, `browser/` the adapters |
 | [tests/](tests/), [scripts/](scripts/) | Offline regressions, demos, evaluation and release utilities |
-| [docs/quickstart.md](docs/quickstart.md) | Installation, configuration, usage and troubleshooting |
-| [docs/architecture.md](docs/architecture.md) | Module responsibilities, recovery and execution boundaries |
-| [docs/evaluation.md](docs/evaluation.md), [evaluations/](evaluations/README.md) | Analysis, scoring rules and sanitized records |
+| [docs/quickstart.en.md](docs/quickstart.en.md) | Installation, configuration, usage and troubleshooting |
+| [docs/architecture.en.md](docs/architecture.en.md) | Module responsibilities, recovery and execution boundaries |
+| [docs/evaluation.en.md](docs/evaluation.en.md), [evaluations/](evaluations/README.md) | Analysis, scoring rules and sanitized records |
 | [examples/](examples/) | Original offline inputs |
 
 Directory conventions, test commands and GitHub publishing steps are maintained in [CONTRIBUTING.md](CONTRIBUTING.md).
